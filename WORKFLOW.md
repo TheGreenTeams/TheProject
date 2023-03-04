@@ -2,16 +2,18 @@
 
 | ресурс | работи се/изпълнен | автор/и | обяснения |
 | - | - |-| - |
-| 01. Bussines | 🟥 0% |  |
-|d| wip | * |d|
-|  | 🟥 0% |
-|d| wip | * |d|
-|d| wip | * |d|
-|d| wip | * |d|
-| 02. Data| 🟥 0%|
-|d| wip | * |d|
-|d| wip | * |d|
-|d| wip | * |d|
+| 01. Business | 🟥 0% |  |
+|../ProductBusiness.cs| | * |d|
+|../MachinesBusiness.cs|  | * |d|
+|../EnergySourcesBusiness.cs|  | * |d|
+| 02. Data| 🟧 30%|
+|../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+| 02.1 Models| 🟥 0%|
+|../Product.cs | | * |d|
+|../Machines.cs|  | * |d|
+|../EnergySources|  | * |d|
 | 03. Presentation | 🟥 0%|
 |d| wip | * |d|
 | 04. NUnit tests | 🟥 0%|

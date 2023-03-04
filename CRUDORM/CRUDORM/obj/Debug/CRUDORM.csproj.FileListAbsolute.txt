@@ -1,0 +1,12 @@
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\CRUDORM.exe.config
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\CRUDORM.exe
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\CRUDORM.pdb
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\EntityFramework.dll
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\EntityFramework.SqlServer.dll
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\EntityFramework.xml
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\bin\Debug\EntityFramework.SqlServer.xml
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\obj\Debug\CRUDORM.csprojAssemblyReference.cache
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\obj\Debug\CRUDORM.csproj.CoreCompileInputs.cache
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\obj\Debug\CRUDORM.csproj.CopyComplete
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\obj\Debug\CRUDORM.exe
+D:\IT кариера\М07 РС - Материали\7.Свързване-на-приложения-с-бази-от-данни-20200127\CRUDORM\CRUDORM\obj\Debug\CRUDORM.pdb

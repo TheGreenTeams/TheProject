@@ -6,7 +6,10 @@
 |../ProductBusiness.cs| | * |d|
 |../MachinesBusiness.cs|  | * |d|
 |../EnergySourcesBusiness.cs|  | * |d|
-| 02. Data| 🟥 0%|
+| 02. Data| 🟧 30%|
+|../ProductContext.cs | | * |d|
+|../MachinesContext.cs | | * |d|
+|../EnergySourcesContext | | * |d|
 | 02.1 Models| 🟥 0%|
 |../Product.cs | | * |d|
 |../Machines.cs|  | * |d|

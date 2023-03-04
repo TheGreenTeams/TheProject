@@ -3,15 +3,14 @@
 | ресурс | работи се/изпълнен | автор/и | обяснения |
 | - | - |-| - |
 | 01. Business | 🟥 0% |  |
-|d| wip | * |d|
-|  | 🟥 0% |
-|d| wip | * |d|
-|d| wip | * |d|
-|d| wip | * |d|
+|01.1. | ProductBusiness.cs | * |d|
+|01.2. | MachinesBusiness.cs | * |d|
+|01.3. | EnergySourcesBusiness.cs | * |d|
 | 02. Data| 🟥 0%|
-|d| wip | * |d|
-|d| wip | * |d|
-|d| wip | * |d|
+| 02.1 Models| 🟥 0%|
+|02.1.1| Product.cs | * |d|
+|02.1.2| Machines.cs | * |d|
+|02.1.3| EnergySources | * |d|
 | 03. Presentation | 🟥 0%|
 |d| wip | * |d|
 | 04. NUnit tests | 🟥 0%|

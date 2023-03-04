@@ -7,9 +7,9 @@
 |../MachinesBusiness.cs|  | * |d|
 |../EnergySourcesBusiness.cs|  | * |d|
 | 02. Data| 🟧 30%|
-|../ProductContext.cs | | Elit0o, TsDafov, KaloyanYodanov |d|
-|../MachinesContext.cs | | Elit0o, TsDafov, KaloyanYodanov |d|
-|../EnergySourcesContext | | Elit0o, TsDafov, KaloyanYodanov |d|
+|../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 | 02.1 Models| 🟥 0%|
 |../Product.cs | | * |d|
 |../Machines.cs|  | * |d|

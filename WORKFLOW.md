@@ -6,11 +6,11 @@
 |../ProductBusiness.cs| | * |d|
 |../MachinesBusiness.cs|  | * |d|
 |../EnergySourcesBusiness.cs|  | * |d|
-| 02. Data| 🟧 30%|
+| 02. Data| ✅ 100%|
 |../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-| 02.1 Models| 🟥 0%|
+| 02.1 Models| ✅ 100%|
 |../Product.cs | | * |d|
 |../Machines.cs|  | * |d|
 |../EnergySources|  | * |d|

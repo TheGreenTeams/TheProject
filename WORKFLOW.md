@@ -11,9 +11,9 @@
 |../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 | 02.1 Models| ✅ 100%|
-|../Product.cs | | * |d|
-|../Machines.cs|  | * |d|
-|../EnergySources|  | * |d|
+|../Product.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../Machines.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../EnergySources| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 | 03. Presentation | 🟥 0%|
 |d| wip | * |d|
 | 04. NUnit tests | 🟥 0%|

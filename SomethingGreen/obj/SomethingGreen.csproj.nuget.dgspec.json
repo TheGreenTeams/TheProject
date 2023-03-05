@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eli\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj": {}
+    "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eli\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj": {
+    "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eli\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
+        "projectUniqueName": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
         "projectName": "SomethingGreen",
-        "projectPath": "C:\\Users\\Eli\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
-        "packagesPath": "C:\\Users\\Eli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eli\\Desktop\\TheProject\\SomethingGreen\\obj\\",
+        "projectPath": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
+        "packagesPath": "C:\\Users\\TsDafov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TsDafov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

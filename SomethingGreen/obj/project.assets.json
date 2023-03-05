@@ -12,12 +12,20 @@
           "System.Data.SqlClient": "4.8.1"
         },
         "compile": {
-          "lib/netstandard2.1/EntityFramework.SqlServer.dll": {},
-          "lib/netstandard2.1/EntityFramework.dll": {}
+          "lib/netstandard2.1/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard2.1/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/EntityFramework.SqlServer.dll": {},
-          "lib/netstandard2.1/EntityFramework.dll": {}
+          "lib/netstandard2.1/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard2.1/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.0/EntityFramework.props": {},
@@ -49,10 +57,14 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -71,10 +83,14 @@
           "Microsoft.NETCore.Platforms": "3.1.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
@@ -121,19 +137,27 @@
       "System.CodeDom/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.CodeDom.dll": {}
+          "ref/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.CodeDom.dll": {}
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Configuration.ConfigurationManager/4.7.0": {
@@ -143,10 +167,14 @@
           "System.Security.Permissions": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.SqlClient/4.8.1": {
@@ -157,10 +185,14 @@
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -180,7 +212,9 @@
           "Microsoft.Win32.SystemEvents": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
@@ -203,10 +237,14 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -218,10 +256,14 @@
       "System.Security.Cryptography.ProtectedData/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -237,19 +279,27 @@
           "System.Windows.Extensions": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/System.Security.Permissions.dll": {}
+          "ref/netcoreapp3.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Security.Permissions.dll": {}
+          "lib/netcoreapp3.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -268,10 +318,14 @@
           "System.Drawing.Common": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/System.Windows.Extensions.dll": {}
+          "ref/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Windows.Extensions.dll": {}
+          "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll": {
@@ -1025,11 +1079,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\TsDafov\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
+>>>>>>> a075c82e41b118e7b6e7cb48cc26aa2c8fbf1b86
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
       "projectName": "SomethingGreen",
       "projectPath": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
@@ -1038,6 +1097,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TsDafov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
+      "projectName": "SomethingGreen",
+      "projectPath": "C:\\Users\\PC\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\TheProject\\SomethingGreen\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a075c82e41b118e7b6e7cb48cc26aa2c8fbf1b86
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1074,7 +1143,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -1083,7 +1153,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> a075c82e41b118e7b6e7cb48cc26aa2c8fbf1b86
       }
     }
   }

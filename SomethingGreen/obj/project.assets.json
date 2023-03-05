@@ -1079,11 +1079,25 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\TsDafov\\.nuget\\packages\\": {}
+=======
     "C:\\Users\\PC\\.nuget\\packages\\": {}
+>>>>>>> a075c82e41b118e7b6e7cb48cc26aa2c8fbf1b86
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
+      "projectName": "SomethingGreen",
+      "projectPath": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
+      "packagesPath": "C:\\Users\\TsDafov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TsDafov\\Desktop\\TheProject\\SomethingGreen\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\TsDafov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
       "projectUniqueName": "C:\\Users\\PC\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
       "projectName": "SomethingGreen",
       "projectPath": "C:\\Users\\PC\\Desktop\\TheProject\\SomethingGreen\\SomethingGreen.csproj",
@@ -1092,6 +1106,7 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a075c82e41b118e7b6e7cb48cc26aa2c8fbf1b86
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1138,7 +1153,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> a075c82e41b118e7b6e7cb48cc26aa2c8fbf1b86
       }
     }
   }

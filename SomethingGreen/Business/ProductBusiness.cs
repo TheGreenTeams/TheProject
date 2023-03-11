@@ -20,6 +20,65 @@ namespace SomethingGreen.Business
             }
         }
 
+        public Product Get(int id)
+        {
+            using (productContext = new ProductContext())
+            {
+                return productContext.Products.Find(id);
+
+            }
+        }
+
+        public void Add(Product product)
+        {
+            using (productContext = new ProductContext())
+            {
+                productContext.Products.Add(product);
+                productContext.SaveChanges();
+
+            }
+        }
+
+        public void Update(Product product)
+        {
+            using (productContext = new ProductContext())
+            {
+                var item = productContext.Products.Find(product.Id);
+                if (item != null)
+                {
+                    productContext.Entry(item).CurrentValues.SetValues(product);
+                    productContext.SaveChanges();
+                }
+
+            }
+        }
+
+        public void Delete(int id)
+        {
+            using (productContext = new ProductContext())
+            {
+                var product = productContext.Products.Find(id);
+                if (product != null)
+                {
+                    productContext.Products.Remove(product);
+                    productContext.SaveChanges();
+                }
+            }
+        }
+
+        public void Sell(int id, int quantity)
+        {
+            using (productContext = new ProductContext())
+            {
+                var product = productContext.Products.Find(id);
+                if (product != null && quantity > 0)
+                {
+                    product = product.Id, product.Name, product.Price, product.Stock - quantity, product.Type;
+                    productContext.Products.Update(product);
+                    productContext.SaveChanges();
+                }
+            }
+        }
 
     }
 }

@@ -36,3 +36,6 @@ C:\Users\TsDafov\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\SomethingGre
 C:\Users\TsDafov\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\ref\SomethingGreen.dll
 C:\Users\TsDafov\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\SomethingGreen.pdb
 C:\Users\TsDafov\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\SomethingGreen.genruntimeconfig.cache
+C:\Users\Eli\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\SomethingGreen.dll
+C:\Users\Eli\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\ref\SomethingGreen.dll
+C:\Users\Eli\Desktop\TheProject\SomethingGreen\obj\Debug\net5.0\SomethingGreen.pdb

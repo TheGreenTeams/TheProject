@@ -6,18 +6,21 @@
 |../ProductBusiness.cs| | * |d|
 |../MachinesBusiness.cs|  | * |d|
 |../EnergySourcesBusiness.cs|  | * |d|
+|../BankBusiness.cs|  | * |d|
 | 02. Data| ✅ 100%|
 |../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../BankContext | Y | TsDafov |Написани|
 | 02.1 Models| ✅ 100%|
 |../Product.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../Machines.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../EnergySources| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../EnergySources.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
+|../Bank.cs| Y | TsDafov |Написани|
 | 03. Presentation | 🟥 0%|
-|d| wip | * |d|
+|d|  | * |d|
 | 04. NUnit tests | 🟥 0%|
-|d| wip | * |d|
+|d|  | * |d|
 ✅🟩🟧🟥
 
 Указания:

@@ -70,11 +70,11 @@ namespace SomethingGreen.Business
         {
             using (productContext = new ProductContext())
             {
-                var product = productContext.Products.Find(id);
-                if (product != null && quantity > 0)
+                Product product = productContext.Products.Find(id);
+                if (product != null && quantity > 0 && product.Stock > quantity)
                 {
-                    product = product.Id, product.Name, product.Price, product.Stock - quantity, product.Type;
-                    productContext.Products.Update(product);
+                    //Product product1 = product.Id;
+                    productContext.Entry(product.Id).CurrentValues.SetValues(product.Stock-quantity);
                     productContext.SaveChanges();
                 }
             }

@@ -1,4 +1,6 @@
 ﻿using System;
+using SomethingGreen.Presentation;
+
 
 namespace SomethingGreen
 {
@@ -6,7 +8,7 @@ namespace SomethingGreen
     {
         static void Main(string[] args)
         {
-            
+            Display a = new Display();
         }
     }
 }

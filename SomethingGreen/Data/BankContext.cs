@@ -13,6 +13,6 @@ namespace SomethingGreen.Data
         {
 
         }
-        public DbSet<Bank> Bank { get; set; }
+        public DbSet<Bank> Banks { get; set; }
     }
 }

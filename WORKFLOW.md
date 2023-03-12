@@ -2,11 +2,11 @@
 
 | ресурс | работи се/изпълнен | автор/и | обяснения |
 | - | - |-| - |
-| 01. Business | 🟩 90% |  |
+| 01. Business | ✅ 100% |  |
 |../ProductBusiness.cs| Y | TsDafov |-|
 |../MachinesBusiness.cs| Y  | TsDafov |-|
 |../EnergySourcesBusiness.cs| Y | TsDafov |-|
-|../BankBusiness.cs| wip | * |Остава да се променят имената на променливите спрямо Bank|
+|../BankBusiness.cs| Y | * | Не гръмна! |
 | 02. Data| ✅ 100%|
 |../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|

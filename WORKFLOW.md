@@ -17,8 +17,8 @@
 |../Machines.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../EnergySources.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
 |../Bank.cs| Y | TsDafov |Написани|
-| 03. Presentation | 🟧 25%|
-|../Display.cs| wip wip wooop | * | зле зле зле |
+| 03. Presentation | ✅ 100%|
+|../Display.cs| Y | Elit0o | Написан |
 | 04. NUnit tests | 🟥 0%|
 |d|  | * |d|
 ✅🟩🟧🟥

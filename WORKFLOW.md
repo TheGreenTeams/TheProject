@@ -6,7 +6,7 @@
 |../ProductBusiness.cs| Y | Elit0o, TsDafov |Написан|
 |../MachinesBusiness.cs| Y  | Elit0o, TsDafov |Написан|
 |../EnergySourcesBusiness.cs| Y | Elit0o, TsDafov |Написан|
-|../BankBusiness.cs| Y | * | Не гръмна! |
+|../BankBusiness.cs| Y | Elit0o | Написан |
 | 02. Data| ✅ 100%|
 |../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
 |../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написан|

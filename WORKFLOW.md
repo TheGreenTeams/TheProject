@@ -3,25 +3,30 @@
 | ресурс | работи се/изпълнен | автор/и | обяснения |
 | - | - |-| - |
 | 01. Business | ✅ 100% |  |
-|../ProductBusiness.cs| Y | TsDafov |-|
-|../MachinesBusiness.cs| Y  | TsDafov |-|
-|../EnergySourcesBusiness.cs| Y | TsDafov |-|
+|../ProductBusiness.cs| Y | Elit0o, TsDafov |Написан|
+|../MachinesBusiness.cs| Y  | Elit0o, TsDafov |Написан|
+|../EnergySourcesBusiness.cs| Y | Elit0o, TsDafov |Написан|
 |../BankBusiness.cs| Y | * | Не гръмна! |
 | 02. Data| ✅ 100%|
-|../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../BankContext | Y | TsDafov |Написани|
+|../ProductContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
+|../MachinesContext.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
+|../EnergySourcesContext | Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
+|../BankContext | Y | TsDafov |Написан|
 | 02.1 Models| ✅ 100%|
-|../Product.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../Machines.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../EnergySources.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написани|
-|../Bank.cs| Y | TsDafov |Написани|
+|../Product.cs | Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
+|../Machines.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
+|../EnergySources.cs| Y | Elit0o, TsDafov, KaloyanYodanov |Написан|
+|../Bank.cs| Y | TsDafov |Написан|
 | 03. Presentation | ✅ 100%|
 |../Display.cs| Y | Elit0o | Написан |
 | 04. NUnit tests | 🟥 0%|
 | ... | ... | ... | ... |
 |App.config| ... | ... | ....|
+| 05. Graphical Interface | 🟩 70%|
+|../Product.cs + Help | wip | Elit0o | - |
+|../Machines.cs + Help| wip | Elit0o | - |
+|../EnergySources.cs + Help| wip | Elit0o | - |
+|../Bank.cs + Help| wip | Elit0o | - |
 ✅🟩🟧🟥
 
 Указания:

@@ -22,3 +22,6 @@ C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\bin\Debug\EntityFramework.
 C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\obj\Debug\testProject.TheFarm.Product.resources
 C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\obj\Debug\TheFarm.csproj.CopyComplete
+C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\bin\Debug\testProject.exe
+C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\bin\Debug\testProject.pdb
+C:\Users\Eli\Desktop\testProject\Presentation\TheFarm\bin\Debug\testProject.exe.config

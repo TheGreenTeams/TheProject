@@ -24,84 +24,82 @@ namespace testProject.Presentation
 
         public Display()
         {
-            ShowMenu();
-            InputMenu();
+            int menuindex = 1;
+            ShowMenu(menuindex);
+            
         }
 
+       
         //Main Menu
-        private void ShowMenu() 
+        private void ShowMenu(int m) 
         {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 18) + "MENU" + new string(' ', 18));
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine("1. Main Menu");
-            Console.WriteLine("2. Products Commands");
-            Console.WriteLine("3. Machines Commands");
-            Console.WriteLine("4. Enegry Sources Commands");
-            Console.WriteLine("5. Bank Commands");
-            Console.WriteLine("6. Exit");
+            switch (m) 
+            {
+                case 1:         
+                    Console.WriteLine(new string('-', 40));
+                Console.WriteLine(new string(' ', 18) + "MENU" + new string(' ', 18));
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("1. Main Menu");
+                Console.WriteLine("2. Products Commands");
+                Console.WriteLine("3. Machines Commands");
+                Console.WriteLine("4. Enegry Sources Commands");
+                Console.WriteLine("5. Bank Commands");
+                Console.WriteLine("6. Exit");
+
+
+                    break;
+                case 2:
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine(new string(' ', 18) + "PRODUCTS MENU" + new string(' ', 18));
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine("1. List all entries");
+                    Console.WriteLine("2. Add new entry");
+                    Console.WriteLine("3. Update entry");
+                    Console.WriteLine("4. Fetch entry by ID");
+                    Console.WriteLine("5. Delete entry by ID");
+                    Console.WriteLine("6. Sell");
+                    Console.WriteLine("7. Show Main Menu");
+                    Console.WriteLine("8. Exit");
+                    break;
+                case 3:
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine(new string(' ', 18) + "MACHINES MENU" + new string(' ', 18));
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine("1. Show Main Menu");
+                    Console.WriteLine("2. List all entries");
+                    Console.WriteLine("3. Add new entry");
+                    Console.WriteLine("4. Update entry");
+                    Console.WriteLine("5. Fetch entry by ID");
+                    Console.WriteLine("6. Delete entry by ID");
+                    Console.WriteLine("7. Exit");
+                    break;
+                case 4:
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine(new string(' ', 18) + "ENERGY SOURCES MENU" + new string(' ', 18));
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine("1. Show Main Menu");
+                    Console.WriteLine("2. List all entries");
+                    Console.WriteLine("3. Add new entry");
+                    Console.WriteLine("4. Update entry");
+                    Console.WriteLine("5. Fetch entry by ID");
+                    Console.WriteLine("6. Delete entry by ID");
+                    Console.WriteLine("7. Exit");
+                    break;
+                case 5:
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine(new string(' ', 18) + "BANK MENU" + new string(' ', 18));
+                    Console.WriteLine(new string('-', 40));
+                    Console.WriteLine("1. Show Main Menu");
+                    Console.WriteLine("2. List all entries");
+                    Console.WriteLine("3. Add new entry");
+                    Console.WriteLine("4. Update entry");
+                    Console.WriteLine("5. Fetch entry by ID");
+                    Console.WriteLine("6. Delete entry by ID");
+                    Console.WriteLine("7. Exit");
+                    break;
+            }
         }
 
-        //Product Menu
-        private void ShowProductsMenu()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 18) + "PRODUCTS MENU" + new string(' ', 18));
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine("1. List all entries");
-            Console.WriteLine("2. Add new entry");
-            Console.WriteLine("3. Update entry");
-            Console.WriteLine("4. Fetch entry by ID");
-            Console.WriteLine("5. Delete entry by ID");
-            Console.WriteLine("6. Sell");
-            Console.WriteLine("7. Show Main Menu");
-            Console.WriteLine("8. Exit");
-        }
-
-        //Machines Menu
-        private void ShowMachinesMenu()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 18) + "MACHINES MENU" + new string(' ', 18));
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine("1. Show Main Menu");
-            Console.WriteLine("2. List all entries");
-            Console.WriteLine("3. Add new entry");
-            Console.WriteLine("4. Update entry");
-            Console.WriteLine("5. Fetch entry by ID");
-            Console.WriteLine("6. Delete entry by ID");
-            Console.WriteLine("7. Exit");
-        }
-
-        //Energy Sources Menu
-        private void ShowEnergySourcesMenu()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 18) + "ENERGY SOURCES MENU" + new string(' ', 18));
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine("1. Show Main Menu");
-            Console.WriteLine("2. List all entries");
-            Console.WriteLine("3. Add new entry");
-            Console.WriteLine("4. Update entry");
-            Console.WriteLine("5. Fetch entry by ID");
-            Console.WriteLine("6. Delete entry by ID");
-            Console.WriteLine("7. Exit");
-        }
-
-        //Bank Menu
-        private void ShowBankMenu()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 18) + "BANK MENU" + new string(' ', 18));
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine("1. Show Main Menu");
-            Console.WriteLine("2. List all entries");
-            Console.WriteLine("3. Add new entry");
-            Console.WriteLine("4. Update entry");
-            Console.WriteLine("5. Fetch entry by ID");
-            Console.WriteLine("6. Delete entry by ID");
-            Console.WriteLine("7. Exit");
-        }
 
         //Cases For The Main Menu
         private void InputMenu()
@@ -113,22 +111,22 @@ namespace testProject.Presentation
                 switch (operation)
                 {
                     case 1:
-                        ShowMenu();
+                        ShowMenu(1);
                         break;
                     case 2:
-                        ShowProductsMenu();
+                        ShowMenu(2);
                         InputProucts();
                         break;
                     case 3:
-                        ShowMachinesMenu();
+                        ShowMenu(3);
                         InputMachines();
                         break;
                     case 4:
-                        ShowEnergySourcesMenu();
+                        ShowMenu(4);
                         InputEnergySource();
                         break;
                     case 5:
-                        ShowBankMenu();
+                        ShowMenu(5);
                         InputBank();
                         break;
                     default:
@@ -142,8 +140,7 @@ namespace testProject.Presentation
         {
             var operation = -1;
             do
-            {
-                ShowProductsMenu();
+            { 
                 operation = int.Parse(Console.ReadLine());
                 switch (operation)
                 {
@@ -166,7 +163,7 @@ namespace testProject.Presentation
                         SellProducts();
                         break;
                     case 7:
-                        ShowMenu();
+                        ShowMenu(1);
                         break;
                     default:
                         break;
@@ -185,7 +182,7 @@ namespace testProject.Presentation
                 switch (operation)
                 {
                     case 1:
-                        ShowMenu();
+                        ShowMenu(1);
                         break;
                     case 2:
                         ListAllMachines();
@@ -239,21 +236,20 @@ namespace testProject.Presentation
                     default:
                         break;
                 }
-            } while (operation != closeMachineOperationId);
+            } while (operation != closeEnergySourcesOperationId);
         }
 
-        //Cases For The Bank Menu   To Do
+        //Cases For The Bank Menu
         private void InputBank()
         {
             var operation = -1;
             do
             {
-                ShowBankMenu();
                 operation = int.Parse(Console.ReadLine());
                 switch (operation)
                 {
                     case 1:
-                        ShowMenu();
+                        ShowMenu(1);
                         break;
                     case 2:
                         ListAllBank();
@@ -273,7 +269,7 @@ namespace testProject.Presentation
                     default:
                         break;
                 }
-            } while (operation != closeMachineOperationId);
+            } while (operation != closeBankOperationId);
         }
 
         //Products Commands
@@ -388,8 +384,8 @@ namespace testProject.Presentation
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 16) + "MACHINES" + new string(' ', 16));
             Console.WriteLine(new string('-', 40));
-            var products = machinesBusiness.GetAll();
-            foreach (var item in products)
+            var machines = machinesBusiness.GetAll();
+            foreach (var item in machines)
             {
                 Console.WriteLine("{0} {1} {2} {3}", item.Id, item.Name, item.Type, item.WorkingCapacity); // Type
             }

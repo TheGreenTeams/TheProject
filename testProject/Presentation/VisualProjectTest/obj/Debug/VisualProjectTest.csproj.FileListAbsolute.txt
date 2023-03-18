@@ -9,3 +9,5 @@ C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\Visual
 C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.exe
 C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.pdb
 C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.AddNewProductForm.resources
+C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.HelpForm.resources

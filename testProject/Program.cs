@@ -5,7 +5,7 @@ using System.Text;
 using testProject.Data;
 using testProject.Presentation;
 
-namespace MigrationsDemo
+namespace testProject
 {
     class Program
     {

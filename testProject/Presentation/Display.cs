@@ -17,6 +17,121 @@ namespace testProject.Presentation
             MainInput();
         }
 
+        #region Users form
+
+        private int closeBankOperationId = 7;
+        private BankBusiness bankBusiness = new BankBusiness();
+
+        private void ShowBankMenu()
+        {
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 18) + "LOG IN" + new string(' ', 18));
+            Console.WriteLine(new string('-', 40));
+            Console.Write("Enter your username: ");
+            
+            Console.WriteLine("7. Exit");
+        }
+        private void BankInput()
+        {
+            var operation = -1;
+            do
+            {
+                ShowBankMenu();
+                operation = int.Parse(Console.ReadLine());
+                switch (operation)
+                {
+                    case 1:
+                        ListAllBankAccounts();
+                        break;
+                    case 2:
+                        AddBankAccount();
+                        break;
+                    case 3:
+                        UpdateBankAccount();
+                        break;
+                    case 4:
+                        FetchBankAccount();
+                        break;
+                    case 5:
+                        DeleteBankAccount();
+                        break;
+                    case 6:
+                        MainInput();
+                        break;
+                    case 7:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
+            } while (operation != closeBankOperationId);
+        }
+
+        private void DeleteBankAccount()
+        {
+            Console.WriteLine("Enter ID to delete a bank account: ");
+            int id = int.Parse(Console.ReadLine());
+            bankBusiness.Delete(id);
+            Console.WriteLine("The bank account is deleted...");
+        }
+
+        private void FetchBankAccount()
+        {
+            Console.WriteLine("Enter ID to serch: ");
+            int id = int.Parse(Console.ReadLine());
+            Bank bankAccount = bankBusiness.Get(id);
+            if (bankAccount != null)
+            {
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("ID: " + bankAccount.Id);
+                Console.WriteLine("Name: " + bankAccount.Name);
+                Console.WriteLine("Balance: " + bankAccount.Balance);
+            }
+        }
+
+        private void UpdateBankAccount()
+        {
+            Console.WriteLine("Enter ID to update: ");
+            int id = int.Parse(Console.ReadLine());
+            Bank bankAccount = bankBusiness.Get(id);
+            if (bankAccount != null)
+            {
+                Console.WriteLine("Enter number of the bank account: ");
+                bankAccount.Name = Console.ReadLine();
+                Console.WriteLine("Enter balance: ");
+                bankAccount.Balance = decimal.Parse(Console.ReadLine());
+
+            }
+            else
+            {
+                Console.WriteLine("Bank account not found!");
+            }
+        }
+
+        private void AddBankAccount()
+        {
+            Bank bankAccount = new Bank();
+            Console.WriteLine("Enter number of the bank account: ");
+            bankAccount.Name = Console.ReadLine();
+            Console.WriteLine("Enter balance: ");
+            bankAccount.Balance = decimal.Parse(Console.ReadLine());
+            bankBusiness.Add(bankAccount);
+        }
+
+        private void ListAllBankAccounts()
+        {
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 16) + "Bank accounts" + new string(' ', 16));
+            Console.WriteLine(new string('-', 40));
+            var bankAccounts = bankBusiness.GetAll();
+            foreach (var item in bankAccounts)
+            {
+                Console.WriteLine("{0} {1} {2}", item.Id, item.Name, item.Balance);
+            }
+        }
+
+        #endregion
+
         #region Main
 
         private int closeMainOperationId = 5;

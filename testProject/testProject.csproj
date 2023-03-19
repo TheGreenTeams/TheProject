@@ -57,6 +57,7 @@
     <Compile Include="Business\EnergySourcesBusiness.cs" />
     <Compile Include="Business\MachinesBusiness.cs" />
     <Compile Include="Business\ProductBusiness.cs" />
+    <Compile Include="Business\UsersBusiness.cs" />
     <Compile Include="Data\BankContext.cs" />
     <Compile Include="Data\EnergySourcesContext.cs" />
     <Compile Include="Data\MachinesContext.cs" />
@@ -64,7 +65,9 @@
     <Compile Include="Data\Models\EnergySources.cs" />
     <Compile Include="Data\Models\Machines.cs" />
     <Compile Include="Data\Models\Product.cs" />
+    <Compile Include="Data\Models\Users.cs" />
     <Compile Include="Data\ProductContext.cs" />
+    <Compile Include="Data\UsersContext.cs" />
     <Compile Include="Presentation\Display.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

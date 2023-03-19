@@ -1,0 +1,13 @@
+C:\Users\Eli\Desktop\testProject\obj\Debug\testProject.csproj.AssemblyReference.cache
+C:\Users\Eli\Desktop\testProject\obj\Debug\testProject.csproj.CoreCompileInputs.cache
+C:\Users\Eli\Desktop\testProject\bin\Debug\testProject.exe.config
+C:\Users\Eli\Desktop\testProject\bin\Debug\testProject.exe
+C:\Users\Eli\Desktop\testProject\bin\Debug\testProject.pdb
+C:\Users\Eli\Desktop\testProject\bin\Debug\EntityFramework.dll
+C:\Users\Eli\Desktop\testProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eli\Desktop\testProject\bin\Debug\EntityFramework.xml
+C:\Users\Eli\Desktop\testProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eli\Desktop\testProject\obj\Debug\testProject.csproj.CopyComplete
+C:\Users\Eli\Desktop\testProject\obj\Debug\testProject.exe
+C:\Users\Eli\Desktop\testProject\obj\Debug\testProject.pdb
+C:\Users\Eli\Desktop\testProject\obj\Debug\testProject.csproj.SuggestedBindingRedirects.cache

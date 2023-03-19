@@ -12,194 +12,85 @@ namespace testProject.Presentation
 {
     class Display
     {
-        //private int closeOperationId = 6;
-        private int closeProductOperationId = 8;
-        private int closeMachineOperationId = 7;
-        private int closeEnergySourcesOperationId = 7;
-        private int closeBankOperationId = 7;
-        private int m;
-
-        private ProductBusiness productBusiness = new ProductBusiness();
-        private MachinesBusiness machinesBusiness = new MachinesBusiness();
-        private EnergySourcesBusiness energySourcesBusiness = new EnergySourcesBusiness();
-        private BankBusiness bankBusiness = new BankBusiness();
-
         public Display()
+        {
+            MainInput();
+        }
+
+        #region Main
+
+        private int closeMainOperationId = 5;
+
+        private void ShowMainMenu()
         {
             Console.WriteLine(new string('-', 40));
             Console.WriteLine(new string(' ', 18) + "MENU" + new string(' ', 18));
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine("1. Main Menu");
-            Console.WriteLine("2. Products Commands");
-            Console.WriteLine("3. Machines Commands");
-            Console.WriteLine("4. Enegry Sources Commands");
-            Console.WriteLine("5. Bank Commands");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("1. Products Commands");
+            Console.WriteLine("2. Machines Commands");
+            Console.WriteLine("3. Enegry Sources Commands");
+            Console.WriteLine("4. Bank Commands");
+            Console.WriteLine("5. Exit");
 
-            int m = int.Parse(Console.ReadLine());
-            ShowMenu(m);
         }
-
-        private void ShowMenu(int m) 
-        {
-            do
-            {
-                if (m == 1)
-                {
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine(new string(' ', 18) + "MENU" + new string(' ', 18));
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine("1. Main Menu");
-                    Console.WriteLine("2. Products Commands");
-                    Console.WriteLine("3. Machines Commands");
-                    Console.WriteLine("4. Energy Sources Commands");
-                    Console.WriteLine("5. Bank Commands");
-                    Console.WriteLine("6. Exit");
-                    ShowMenu(m);
-                }
-                else if (m == 2)
-                {
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine(new string(' ', 18) + "PRODUCTS MENU" + new string(' ', 18));
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine("1. List all entries");
-                    Console.WriteLine("2. Add new entry");
-                    Console.WriteLine("3. Update entry");
-                    Console.WriteLine("4. Fetch entry by ID");
-                    Console.WriteLine("5. Delete entry by ID");
-                    Console.WriteLine("6. Sell");
-                    Console.WriteLine("7. Exit to Main Menu");
-                    Console.WriteLine("8. Exit");
-                    InputProucts();
-                }
-                else if (m == 3)
-                {
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine(new string(' ', 18) + "MACHINES MENU" + new string(' ', 18));
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine("1. List all entries");
-                    Console.WriteLine("2. Add new entry");
-                    Console.WriteLine("3. Update entry");
-                    Console.WriteLine("4. Fetch entry by ID");
-                    Console.WriteLine("5. Delete entry by ID");
-                    Console.WriteLine("6. Show Main Menu");
-                    Console.WriteLine("7. Exit");
-                    InputMachines();
-                }
-                else if (m == 4)
-                {
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine(new string(' ', 18) + "ENERGY SOURCES MENU" + new string(' ', 18));
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine("1. List all entries");
-                    Console.WriteLine("2. Add new entry");
-                    Console.WriteLine("3. Update entry");
-                    Console.WriteLine("4. Fetch entry by ID");
-                    Console.WriteLine("5. Delete entry by ID");
-                    Console.WriteLine("6. Show Main Menu");
-                    Console.WriteLine("7. Exit");
-                    InputEnergySource();
-                }
-                else if (m == 5)
-                {
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine(new string(' ', 18) + "BANK MENU" + new string(' ', 18));
-                    Console.WriteLine(new string('-', 40));
-                    Console.WriteLine("1. List all entries");
-                    Console.WriteLine("2. Add new entry");
-                    Console.WriteLine("3. Update entry");
-                    Console.WriteLine("4. Fetch entry by ID");
-                    Console.WriteLine("5. Delete entry by ID");
-                    Console.WriteLine("6. Show Main Menu");
-                    Console.WriteLine("7. Exit");
-                    InputBank();
-                }
-            } while (m != 6);
-        }
-
-        //private void ShowMenu(int m)
-        //{
-        //    switch (m)
-        //    {
-        //        case 1:
-        //            Console.WriteLine(new string('-', 40));
-        //            Console.WriteLine(new string(' ', 18) + "MENU" + new string(' ', 18));
-        //            Console.WriteLine(new string('-', 40));
-        //            Console.WriteLine("1. Main Menu");
-        //            Console.WriteLine("2. Products Commands");
-        //            Console.WriteLine("3. Machines Commands");
-        //            Console.WriteLine("4. Enegry Sources Commands");
-        //            Console.WriteLine("5. Bank Commands");
-        //            Console.WriteLine("6. Exit");
-        //            break;
-        //        case 2:
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine(new string (' ', 18) + "PRODUCTS MENU" + new string (' ', 18));
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine("1. Show Main Menu");
-        //            Console.WriteLine("2. List all entries");
-        //            Console.WriteLine("3. Add new entry");
-        //            Console.WriteLine("4. Update entry");
-        //            Console.WriteLine("5. Fetch entry by ID");
-        //            Console.WriteLine("6. Delete entry by ID");
-        //            Console.WriteLine("7. Sell");
-        //            Console.WriteLine("8. Exit to Main Menu");
-        //            Console.WriteLine("9. Exit");
-        //            InputProucts();
-        //            break;
-        //        case 3:
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine(new string (' ', 18) + "MACHINES MENU" + new string (' ', 18));
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine("1. Show Main Menu");
-        //            Console.WriteLine("2. List all entries");
-        //            Console.WriteLine("3. Add new entry");
-        //            Console.WriteLine("4. Update entry");
-        //            Console.WriteLine("5. Fetch entry by ID");
-        //            Console.WriteLine("6. Delete entry by ID");
-        //            Console.WriteLine("7. Exit");
-        //            InputMachines();
-        //            break;
-        //        case 4:
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine(new string (' ', 18) + "ENERGY SOURCES MENU" + new string (' ', 18));
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine("1. Show Main Menu");
-        //            Console.WriteLine("2. List all entries");
-        //            Console.WriteLine("3. Add new entry");
-        //            Console.WriteLine("4. Update entry");
-        //            Console.WriteLine("5. Fetch entry by ID");
-        //            Console.WriteLine("6. Delete entry by ID");
-        //            Console.WriteLine("7. Exit");
-        //            InputEnergySource();
-        //            break;
-        //        case 5:
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine(new string (' ', 18) + "BANK MENU" + new string (' ', 18));
-        //            Console.WriteLine(new string ('-', 40));
-        //            Console.WriteLine("1. Show Main Menu");
-        //            Console.WriteLine("2. List all entries");
-        //            Console.WriteLine("3. Add new entry");
-        //            Console.WriteLine("4. Update entry");
-        //            Console.WriteLine("5. Fetch entry by ID");
-        //            Console.WriteLine("6. Delete entry by ID");
-        //            Console.WriteLine("7. Exit");
-        //            InputBank();
-        //            break;
-        //        default:
-        //            break;
-        //    }
-        //}
-
-
-        //Cases For The Products Menu
-
-
-        private void InputProucts()
+        private void MainInput()
         {
             var operation = -1;
             do
             {
+                ShowMainMenu();
+                operation = int.Parse(Console.ReadLine());
+                switch (operation)
+                {
+                    case 1:
+                        ProductInput();
+                        break;
+                    case 2:
+                        MachineInput();
+                        break;
+                    case 3:
+                        EnergySourcesInput();
+                        break;
+                    case 4:
+                        BankInput();
+                        break;
+                    case 5:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
+            } while (operation != closeMainOperationId);
+        }
+
+        #endregion
+
+        #region Product Options
+
+        private int closeCarOperationId = 8;
+        private ProductBusiness productBusiness = new ProductBusiness();
+        private void ShowProductMenu()
+        {
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 18) + "PRODUCTS MENU" + new string(' ', 18));
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine("1. List all entries");
+            Console.WriteLine("2. Add new entry");
+            Console.WriteLine("3. Update entry");
+            Console.WriteLine("4. Fetch entry by ID");
+            Console.WriteLine("5. Delete entry by ID");
+            Console.WriteLine("6. Sell");
+            Console.WriteLine("7. Exit to Main Menu");
+            Console.WriteLine("8. Exit");
+
+        }
+
+        private void ProductInput()
+        {
+            var operation = -1;
+            do
+            {
+                ShowProductMenu();
                 operation = int.Parse(Console.ReadLine());
                 switch (operation)
                 {
@@ -207,139 +98,41 @@ namespace testProject.Presentation
                         ListAllProducts();
                         break;
                     case 2:
-                        AddProducts();
+                        AddProduct();
                         break;
                     case 3:
-                        UpdateProducts();
+                        UpdateProduct();
                         break;
                     case 4:
-                        FetchProducts();
+                        FetchProduct();
                         break;
                     case 5:
-                        DeleteProducts();
+                        DeleteProduct();
                         break;
                     case 6:
-                        SellProducts();
+                        SellProduct();
                         break;
                     case 7:
-                        ExitProducts(); //to do
+                        MainInput();
+                        break;
+                    case 8:
+                        Environment.Exit(0);
                         break;
                     default:
                         break;
                 }
-            } while (operation != closeProductOperationId);
+            } while (operation != closeCarOperationId);
         }
 
-        //Cases For The Machines Menu
-        private void InputMachines()
+        private void DeleteProduct()
         {
-            var operation = -1;
-            do
-            {
-                operation = int.Parse(Console.ReadLine());
-                switch (operation)
-                {
-                    case 1:
-                        ListAllMachines();
-                        break;
-                    case 2:
-                        AddMachines();
-                        break;
-                    case 3:
-                        UpdateMachines();
-                        break;
-                    case 4:
-                        FetchMachines();
-                        break;
-                    case 5:
-                        DeleteMachines();
-                        break;
-                    case 6:
-                        ShowMenu(1); //to do
-                        break; 
-                    default:
-                        break;
-                }
-            } while (operation != closeMachineOperationId);
-        }
-
-        //Cases For The Energy Sources Menu
-        private void InputEnergySource()
-        {
-            var operation = -1;
-            do
-            {
-                operation = int.Parse(Console.ReadLine());
-                switch (operation)
-                {
-                    case 1:
-                        ListAllEnergySources();
-                        break;
-                    case 2:
-                        AddEnergySources();
-                        break;
-                    case 3:
-                        UpdateEnergySources();
-                        break;
-                    case 4:
-                        FetchEnergySources();
-                        break;
-                    case 5:
-                        DeleteEnergySources();
-                        break;
-                    case 6:
-                        ShowMenu(1); //to do
-                        break;
-                    default:
-                        break;
-                }
-            } while (operation != closeEnergySourcesOperationId);
-        }
-
-        //Cases For The Bank Menu
-        private void InputBank()
-        {
-            var operation = -1;
-            do
-            {
-                operation = int.Parse(Console.ReadLine());
-                switch (operation)
-                {
-                    case 1:
-                        ListAllBank();
-                        break;
-                    case 2:
-                        AddBank();
-                        break;
-                    case 3:
-                        UpdateBank();
-                        break;
-                    case 4:
-                        FetchBank();
-                        break;
-                    case 5:
-                        DeleteBank();
-                        break;
-                    case 6:
-                        ShowMenu(1);
-                        break;
-                    default:
-                        break;
-                }
-            } while (operation != closeBankOperationId);
-        }
-
-
-        //Products Commands
-        private void DeleteProducts()
-        {
-            Console.WriteLine("Enter ID to delete: ");
+            Console.WriteLine("Enter ID to delete a product: ");
             int id = int.Parse(Console.ReadLine());
             productBusiness.Delete(id);
-            Console.WriteLine("Done.");
+            Console.WriteLine("The product is deleted...");
         }
 
-        private void FetchProducts()
+        private void FetchProduct()
         {
             Console.WriteLine("Enter ID to fetch: ");
             int id = int.Parse(Console.ReadLine());
@@ -358,32 +151,10 @@ namespace testProject.Presentation
             {
                 Console.WriteLine("Product not found!");
             }
+
         }
 
-        private void UpdateProducts()
-        {
-            Console.WriteLine("Enter ID to update: ");
-            int id = int.Parse(Console.ReadLine());
-            Product product = productBusiness.Get(id);
-            if (product != null)
-            {
-                Console.WriteLine("Enter name: ");
-                product.Name = Console.ReadLine();
-                Console.WriteLine("Enter price: ");
-                product.Price = decimal.Parse(Console.ReadLine());
-                Console.WriteLine("Enter availability: ");
-                product.Stock = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter type: ");
-                product.Type = Console.ReadLine();
-                productBusiness.Update(product);
-            }
-            else
-            {
-                Console.WriteLine("Product not found!");
-            }
-        }
-
-        private void SellProducts()
+        private void SellProduct()
         {
             Console.WriteLine("Enter ID to sell: ");
             int id = int.Parse(Console.ReadLine());
@@ -410,7 +181,31 @@ namespace testProject.Presentation
             }
         }
 
-        private void AddProducts()
+        private void UpdateProduct()
+        {
+            Console.WriteLine("Enter ID to update: ");
+            int id = int.Parse(Console.ReadLine());
+            Product product = productBusiness.Get(id);
+            if (product != null)
+            {
+                Console.WriteLine("Enter name: ");
+                product.Name = Console.ReadLine();
+                Console.WriteLine("Enter price: ");
+                product.Price = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("Enter availability: ");
+                product.Stock = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter type: ");
+                product.Type = Console.ReadLine();
+                productBusiness.Update(product);
+            }
+            else
+            {
+                Console.WriteLine("Product not found!");
+            }
+
+        }
+
+        private void AddProduct()
         {
             Product product = new Product();
             Console.WriteLine("Enter name: ");
@@ -423,6 +218,7 @@ namespace testProject.Presentation
             product.Type = Console.ReadLine();
             productBusiness.Add(product);
             Console.WriteLine("Done.");
+
         }
 
         private void ListAllProducts()
@@ -433,42 +229,95 @@ namespace testProject.Presentation
             var products = productBusiness.GetAll();
             foreach (var item in products)
             {
-                Console.WriteLine("{0} {1} {2} {3} {4}", item.Id, item.Name, item.Price, item.Stock, item.Type); // Type
+                Console.WriteLine("{0} {1} {2} {3} {4}", item.Id, item.Name, item.Price, item.Stock, item.Type);
             }
         }
+        #endregion
 
-        private void ExitProducts() 
+        #region Machines Options
+
+        private int closeMachineOperationId = 7;
+        private MachinesBusiness machinesBusiness = new MachinesBusiness();
+
+        private void ShowMachineMenu()
         {
-            ShowMenu(1);
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 18) + "MACHINES MENU" + new string(' ', 18));
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine("1. List all entries");
+            Console.WriteLine("2. Add new entry");
+            Console.WriteLine("3. Update entry");
+            Console.WriteLine("4. Fetch entry by ID");
+            Console.WriteLine("5. Delete entry by ID");
+            Console.WriteLine("6. Show Main Menu");
+            Console.WriteLine("7. Exit");
         }
-
-        //Machines Commands
-        private void ListAllMachines()
+        private void MachineInput()
         {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 16) + "MACHINES" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
-            var machines = machinesBusiness.GetAll();
-            foreach (var item in machines)
+            var operation = -1;
+            do
             {
-                Console.WriteLine("{0} {1} {2} {3}", item.Id, item.Name, item.Type, item.WorkingCapacity); // Type
-            }
+                ShowMachineMenu();
+                operation = int.Parse(Console.ReadLine());
+                switch (operation)
+                {
+                    case 1:
+                        ListAllMachines();
+                        break;
+                    case 2:
+                        AddMachine();
+                        break;
+                    case 3:
+                        UpdateMachine();
+                        break;
+                    case 4:
+                        FetchMachine();
+                        break;
+                    case 5:
+                        DeleteMachine();
+                        break;
+                    case 6:
+                        MainInput();
+                        break;
+                    case 7:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
+            } while (operation != closeMachineOperationId);
         }
 
-        private void AddMachines()
+        private void DeleteMachine()
         {
-            Machines machines = new Machines();
-            Console.WriteLine("Enter name: ");
-            machines.Name = Console.ReadLine();
-            Console.WriteLine("Enter type: ");
-            machines.Type = Console.ReadLine();
-            Console.WriteLine("Enter working capacity: ");
-            machines.WorkingCapacity = decimal.Parse(Console.ReadLine());
-            machinesBusiness.Add(machines);
-            Console.WriteLine("Done.");
+            Console.WriteLine("Enter ID to delete a machine: ");
+            int id = int.Parse(Console.ReadLine());
+            machinesBusiness.Delete(id);
+            Console.WriteLine("The machine is deleted...");
         }
 
-        private void UpdateMachines()
+        private void FetchMachine()
+        {
+            Console.WriteLine("Enter ID to fetch: ");
+            int id = int.Parse(Console.ReadLine());
+            Machines machines = machinesBusiness.Get(id);
+            if (machines != null)
+            {
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("ID: " + machines.Id);
+                Console.WriteLine("Name: " + machines.Name);
+                Console.WriteLine("Type: " + machines.Type);
+                Console.WriteLine("Working Capacity: " + machines.WorkingCapacity);
+                Console.WriteLine(new string('-', 40));
+            }
+            else
+            {
+                Console.WriteLine("Machine not found!");
+            }
+
+        }
+
+        private void UpdateMachine()
         {
             Console.WriteLine("Enter ID to update: ");
             int id = int.Parse(Console.ReadLine());
@@ -488,67 +337,123 @@ namespace testProject.Presentation
             {
                 Console.WriteLine("Machine not found!");
             }
+
         }
 
-        private void FetchMachines()
+        private void AddMachine()
+        {
+            Machines machines = new Machines();
+            Console.WriteLine("Enter name: ");
+            machines.Name = Console.ReadLine();
+            Console.WriteLine("Enter type: ");
+            machines.Type = Console.ReadLine();
+            Console.WriteLine("Enter working capacity: ");
+            machines.WorkingCapacity = decimal.Parse(Console.ReadLine());
+            machinesBusiness.Add(machines);
+            Console.WriteLine("Done.");
+        }
+
+        private void ListAllMachines()
+        {
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 16) + "MACHINES" + new string(' ', 16));
+            Console.WriteLine(new string('-', 40));
+            var machines = machinesBusiness.GetAll();
+            foreach (var item in machines)
+            {
+                Console.WriteLine("{0} {1} {2} {3}", item.Id, item.Name, item.Type, item.WorkingCapacity); // Type
+            }
+        }
+        #endregion
+
+        #region Energy Sources
+
+        private int closeEnergySourcesOperationId = 7;
+        private EnergySourcesBusiness energySourcesBusiness = new EnergySourcesBusiness();
+
+        private void ShowEnergySourcesMenu()
+        {
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 18) + "ENERGY SOURCES MENU" + new string(' ', 18));
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine("1. List all energy sources");
+            Console.WriteLine("2. Add new energy source");
+            Console.WriteLine("3. Update energy source");
+            Console.WriteLine("4. Fetch energy source by ID");
+            Console.WriteLine("5. Delete energy source by ID");
+            Console.WriteLine("6. Show Main Menu");
+            Console.WriteLine("7. Exit");
+
+        }
+        private void EnergySourcesInput()
+        {
+            var operation = -1;
+            do
+            {
+                ShowEnergySourcesMenu();
+                operation = int.Parse(Console.ReadLine());
+                switch (operation)
+                {
+                    case 1:
+                        ListAllEnergySources();
+                        break;
+                    case 2:
+                        AddEnergySources();
+                        break;
+                    case 3:
+                        UpdateEnergySource();
+                        break;
+                    case 4:
+                        FetchEnergySource();
+                        break;
+                    case 5:
+                        DeleteEnergySource();
+                        break;
+                    case 6:
+                        MainInput();
+                        break;
+                    case 7:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
+            } while (operation != closeEnergySourcesOperationId);
+        }
+
+        private void DeleteEnergySource()
+        {
+            Console.WriteLine("Enter ID to delete machine: ");
+            int id = int.Parse(Console.ReadLine());
+            energySourcesBusiness.Delete(id);
+            Console.WriteLine("Done.");
+        }
+
+        private void FetchEnergySource()
         {
             Console.WriteLine("Enter ID to fetch: ");
             int id = int.Parse(Console.ReadLine());
-            Machines machines = machinesBusiness.Get(id);
-            if (machines != null)
+            EnergySources energySources = energySourcesBusiness.Get(id);
+            if (energySources != null)
             {
                 Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + machines.Id);
-                Console.WriteLine("Name: " + machines.Name);
-                Console.WriteLine("Type: " + machines.Type);
-                Console.WriteLine("Working Capacity: " + machines.WorkingCapacity);
+                Console.WriteLine("ID: " + energySources.Id);
+                Console.WriteLine("Name: " + energySources.Name);
+                Console.WriteLine("Price: " + energySources.Price);
+                Console.WriteLine("Type: " + energySources.Type);
+                Console.WriteLine("Power: " + energySources.KWh);
+                Console.WriteLine("Area: " + energySources.Area);
                 Console.WriteLine(new string('-', 40));
             }
             else
             {
-                Console.WriteLine("Machine not found!");
+                Console.WriteLine("Energy source not found!");
             }
+
+
         }
 
-        private void DeleteMachines()
-        {
-            Console.WriteLine("Enter ID to delete: ");
-            int id = int.Parse(Console.ReadLine());
-            machinesBusiness.Delete(id);
-            Console.WriteLine("Done.");
-        }
-
-        //Energy Sources Commands
-        private void ListAllEnergySources()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 16) + "ENERGY SOURCES" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
-            var products = energySourcesBusiness.GetAll();
-            foreach (var item in products)
-            {
-                Console.WriteLine("{0} {1} {2} {3} {4} {5}", item.Id, item.Name, item.Price, item.Type, item.KWh, item.Area);
-            }
-        }
-
-        private void AddEnergySources()
-        {
-            EnergySources energySources = new EnergySources();
-            Console.WriteLine("Enter name: ");
-            energySources.Name = Console.ReadLine();
-            Console.WriteLine("Enter price: ");
-            energySources.Price = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Enter type: ");
-            energySources.Type = Console.ReadLine();
-            Console.WriteLine("Enter power: ");
-            energySources.KWh = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Enter area: ");
-            energySources.Area = decimal.Parse(Console.ReadLine());
-            energySourcesBusiness.Add(energySources);
-            Console.WriteLine("Done.");
-        }
-
-        private void UpdateEnergySources()
+        private void UpdateEnergySource()
         {
             Console.WriteLine("Enter ID to update: ");
             int id = int.Parse(Console.ReadLine());
@@ -574,80 +479,126 @@ namespace testProject.Presentation
             }
         }
 
-        private void FetchEnergySources()
+        private void AddEnergySources()
         {
-            Console.WriteLine("Enter ID to fetch: ");
-            int id = int.Parse(Console.ReadLine());
-            EnergySources energySources = energySourcesBusiness.Get(id);
-            if (energySources != null)
-            {
-                Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + energySources.Id);
-                Console.WriteLine("Name: " + energySources.Name);
-                Console.WriteLine("Price: " + energySources.Price);
-                Console.WriteLine("Type: " + energySources.Type);
-                Console.WriteLine("Power: " + energySources.KWh);
-                Console.WriteLine("Area: " + energySources.Area);
-                Console.WriteLine(new string('-', 40));
-            }
-            else
-            {
-                Console.WriteLine("Energy source not found!");
-            }
-        }
-
-        private void DeleteEnergySources()
-        {
-            Console.WriteLine("Enter ID to delete: ");
-            int id = int.Parse(Console.ReadLine());
-            energySourcesBusiness.Delete(id);
+            EnergySources energySources = new EnergySources();
+            Console.WriteLine("Enter name: ");
+            energySources.Name = Console.ReadLine();
+            Console.WriteLine("Enter price: ");
+            energySources.Price = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter type: ");
+            energySources.Type = Console.ReadLine();
+            Console.WriteLine("Enter power: ");
+            energySources.KWh = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter area: ");
+            energySources.Area = decimal.Parse(Console.ReadLine());
+            energySourcesBusiness.Add(energySources);
             Console.WriteLine("Done.");
+
         }
 
-        //Bank Commands
-        //Lists all bank accounts
-        private void ListAllBank()
+        private void ListAllEnergySources()
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 16) + "BANK" + new string(' ', 16));
+            Console.WriteLine(new string(' ', 16) + "ENERGY SOURCES" + new string(' ', 16));
             Console.WriteLine(new string('-', 40));
-            var products = bankBusiness.GetAll();
+            var products = energySourcesBusiness.GetAll();
             foreach (var item in products)
             {
-                Console.WriteLine("{0} {1} {2} {3}", item.Id, item.Name, item.Balance, item.Type);
+                Console.WriteLine("{0} {1} {2} {3} {4} {5}", item.Id, item.Name, item.Price, item.Type, item.KWh, item.Area);
             }
         }
 
-        //Adds new bank account
-        private void AddBank()
+        #endregion
+
+        #region BankOptions
+
+        private int closeBankOperationId = 7;
+        private BankBusiness bankBusiness = new BankBusiness();
+
+        private void ShowBankMenu()
         {
-            Bank bank = new Bank();
-            Console.WriteLine("Enter name: ");
-            bank.Name = Console.ReadLine();
-            Console.WriteLine("Balance: ");
-            bank.Balance = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Enter type: ");
-            bank.Type = Console.ReadLine();
-            bankBusiness.Add(bank);
-            Console.WriteLine("Done.");
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 18) + "BANK MENU" + new string(' ', 18));
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine("1. List all entries");
+            Console.WriteLine("2. Add new entry");
+            Console.WriteLine("3. Update entry");
+            Console.WriteLine("4. Fetch entry by ID");
+            Console.WriteLine("5. Delete entry by ID");
+            Console.WriteLine("6. Show Main Menu");
+            Console.WriteLine("7. Exit");
+        }
+        private void BankInput()
+        {
+            var operation = -1;
+            do
+            {
+                ShowBankMenu();
+                operation = int.Parse(Console.ReadLine());
+                switch (operation)
+                {
+                    case 1:
+                        ListAllBankAccounts();
+                        break;
+                    case 2:
+                        AddBankAccount();
+                        break;
+                    case 3:
+                        UpdateBankAccount();
+                        break;
+                    case 4:
+                        FetchBankAccount();
+                        break;
+                    case 5:
+                        DeleteBankAccount();
+                        break;
+                    case 6:
+                        MainInput();
+                        break;
+                    case 7:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
+            } while (operation != closeBankOperationId);
         }
 
-        //Updates a certain bank account
-        private void UpdateBank()
+        private void DeleteBankAccount()
+        {
+            Console.WriteLine("Enter ID to delete a bank account: ");
+            int id = int.Parse(Console.ReadLine());
+            bankBusiness.Delete(id);
+            Console.WriteLine("The bank account is deleted...");
+        }
+
+        private void FetchBankAccount()
+        {
+            Console.WriteLine("Enter ID to serch: ");
+            int id = int.Parse(Console.ReadLine());
+            Bank bankAccount = bankBusiness.Get(id);
+            if (bankAccount != null)
+            {
+                Console.WriteLine(new string('-', 40));
+                Console.WriteLine("ID: " + bankAccount.Id);
+                Console.WriteLine("Name: " + bankAccount.Name);
+                Console.WriteLine("Balance: " + bankAccount.Balance);
+            }
+        }
+
+        private void UpdateBankAccount()
         {
             Console.WriteLine("Enter ID to update: ");
             int id = int.Parse(Console.ReadLine());
-            Bank bank = bankBusiness.Get(id);
-            if (bank != null)
+            Bank bankAccount = bankBusiness.Get(id);
+            if (bankAccount != null)
             {
-                Console.WriteLine("Enter name: ");
-                bank.Name = Console.ReadLine();
+                Console.WriteLine("Enter number of the bank account: ");
+                bankAccount.Name = Console.ReadLine();
                 Console.WriteLine("Enter balance: ");
-                bank.Balance = decimal.Parse(Console.ReadLine());
-                Console.WriteLine("Enter type: ");
-                bank.Type = Console.ReadLine();
-                bankBusiness.Update(bank);
-                Console.WriteLine("Done.");
+                bankAccount.Balance = decimal.Parse(Console.ReadLine());
+
             }
             else
             {
@@ -655,34 +606,28 @@ namespace testProject.Presentation
             }
         }
 
-        //Shows the info for a certain bank account
-        private void FetchBank()
+        private void AddBankAccount()
         {
-            Console.WriteLine("Enter ID to fetch: ");
-            int id = int.Parse(Console.ReadLine());
-            Bank bank = bankBusiness.Get(id);
-            if (bank != null)
+            Bank bankAccount = new Bank();
+            Console.WriteLine("Enter number of the bank account: ");
+            bankAccount.Name = Console.ReadLine();
+            Console.WriteLine("Enter balance: ");
+            bankAccount.Balance = decimal.Parse(Console.ReadLine());
+            bankBusiness.Add(bankAccount);
+        }
+
+        private void ListAllBankAccounts()
+        {
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 16) + "Bank accounts" + new string(' ', 16));
+            Console.WriteLine(new string('-', 40));
+            var bankAccounts = bankBusiness.GetAll();
+            foreach (var item in bankAccounts)
             {
-                Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + bank.Id);
-                Console.WriteLine("Name: " + bank.Name);
-                Console.WriteLine("Balance: " + bank.Balance);
-                Console.WriteLine("Type: " + bank.Type);
-                Console.WriteLine(new string('-', 40));
-            }
-            else
-            {
-                Console.WriteLine("Bank account not found!");
+                Console.WriteLine("{0} {1} {2}", item.Id, item.Name, item.Balance);
             }
         }
 
-        //Deletes a bank account
-        private void DeleteBank()
-        {
-            Console.WriteLine("Enter ID to delete: ");
-            int id = int.Parse(Console.ReadLine());
-            bankBusiness.Delete(id);
-            Console.WriteLine("Done.");
-        }
+        #endregion
     }
 }

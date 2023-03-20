@@ -1,0 +1,3 @@
+C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.SuggestedBindingRedirects.cache

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.Timers;
+using System.Threading;
 
 namespace testProject.Presentation
 {
@@ -14,121 +16,180 @@ namespace testProject.Presentation
     {
         public Display()
         {
-            MainInput();
+            UserInput();
         }
 
-        #region Users form
+        #region User Options
 
-        private int closeBankOperationId = 7;
-        private BankBusiness bankBusiness = new BankBusiness();
+        private UsersBusiness usersBusiness = new UsersBusiness();
+        private int closeUserOperationId = 6;
 
-        private void ShowBankMenu()
+        private void ShowUserMenu() 
         {
             Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 18) + "LOG IN" + new string(' ', 18));
+            Console.WriteLine(new string(' ', 18) + "ACCOUNT SETTINGS" + new string(' ', 18));
             Console.WriteLine(new string('-', 40));
-            Console.Write("Enter your username: ");
-            
-            Console.WriteLine("7. Exit");
+            Console.WriteLine("1. Sign In");
+            Console.WriteLine("2. Log In");
+            Console.WriteLine("3. List all accounts");
+            Console.WriteLine("4. Forgot password");
+            Console.WriteLine("5. Delete account");
+            Console.WriteLine("6. Exit");
         }
-        private void BankInput()
+        private void UserInput() 
         {
             var operation = -1;
             do
             {
-                ShowBankMenu();
+                ShowUserMenu();
                 operation = int.Parse(Console.ReadLine());
                 switch (operation)
                 {
                     case 1:
-                        ListAllBankAccounts();
+                        AddUserAccount();
                         break;
                     case 2:
-                        AddBankAccount();
+                        UserLogIn();
                         break;
                     case 3:
-                        UpdateBankAccount();
+                        ListAllUsers();
                         break;
                     case 4:
-                        FetchBankAccount();
+                        UpdateUser();
                         break;
                     case 5:
-                        DeleteBankAccount();
+                        DeleteUser();
                         break;
                     case 6:
-                        MainInput();
-                        break;
-                    case 7:
                         Environment.Exit(0);
                         break;
                     default:
                         break;
                 }
-            } while (operation != closeBankOperationId);
+
+            } while (operation != closeUserOperationId);
+            MainInput();
+        }
+        private void AddUserAccount()
+        {
+            Users users = new Users();
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 18) + "SIGN UP" + new string(' ', 18));
+            Console.WriteLine(new string('-', 40));
+            Console.Write("Enter your first name: ");
+            users.FirstName = Console.ReadLine();
+            Console.Write("Enter your last name: ");
+            users.LastName = Console.ReadLine();
+            Console.Write("Enter your email: ");
+            users.EMail = Console.ReadLine();
+            while (!users.EMail.Contains("@email.com"))
+            {
+                Console.WriteLine("Invalid Email Address! Try again!");
+                Console.Write("Enter your email: ");
+                users.EMail = Console.ReadLine();
+            }
+            users.EMail = users.EMail;
+            Console.Write("Enter your username: ");
+            users.Username = Console.ReadLine();
+            Console.Write("Enter a password: ");
+            users.Password = Console.ReadLine();
+            usersBusiness.Add(users);
+            Console.WriteLine("Account created successfully!");
+            MainInput();
         }
 
-        private void DeleteBankAccount()
-        {
-            Console.WriteLine("Enter ID to delete a bank account: ");
-            int id = int.Parse(Console.ReadLine());
-            bankBusiness.Delete(id);
-            Console.WriteLine("The bank account is deleted...");
-        }
 
-        private void FetchBankAccount()
+        public void UserLogIn()
         {
-            Console.WriteLine("Enter ID to serch: ");
-            int id = int.Parse(Console.ReadLine());
-            Bank bankAccount = bankBusiness.Get(id);
-            if (bankAccount != null)
+            var users = new Users();
+            var usersContext = new UsersContext();
+            using (usersContext)
             {
                 Console.WriteLine(new string('-', 40));
-                Console.WriteLine("ID: " + bankAccount.Id);
-                Console.WriteLine("Name: " + bankAccount.Name);
-                Console.WriteLine("Balance: " + bankAccount.Balance);
+                Console.WriteLine(new string(' ', 16) + "LOG IN" + new string(' ', 16));
+                Console.WriteLine(new string('-', 40));
+                Console.Write("Enter your username: ");
+                users.Username = Console.ReadLine();
+                Console.Write("Enter your password: ");
+                users.Password = Console.ReadLine();
+                try
+                {
+                    foreach (var item in usersContext.Userss)
+                    {
+                        if (item.Username == users.Username && item.Password == users.Password)
+                        {
+                            Console.WriteLine("You have successfully logged in!");
+                            MainInput();
+                            break;
+                        }
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Your username or password may be incorrect, try again!");
+                }
             }
         }
 
-        private void UpdateBankAccount()
+        private void ListAllUsers()
         {
-            Console.WriteLine("Enter ID to update: ");
-            int id = int.Parse(Console.ReadLine());
-            Bank bankAccount = bankBusiness.Get(id);
-            if (bankAccount != null)
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 16) + "USERS" + new string(' ', 16));
+            Console.WriteLine(new string('-', 40));
+            var users = usersBusiness.GetAll();
+            foreach (var item in users)
             {
-                Console.WriteLine("Enter number of the bank account: ");
-                bankAccount.Name = Console.ReadLine();
-                Console.WriteLine("Enter balance: ");
-                bankAccount.Balance = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("{0} {1} {2} {3} {4} {5}", item.Id, item.FirstName, item.LastName,item.EMail, item.Username, item.Password);
+            }
+        }
 
+        private void UpdateUser()
+        {
+            Console.WriteLine("Enter ID to change username or password: ");
+            int id = int.Parse(Console.ReadLine());
+            Users users = usersBusiness.Get(id);
+            if (users != null)
+            {
+                Console.WriteLine("Enter first name: ");
+                users.FirstName = Console.ReadLine();
+                Console.WriteLine("Enter last name: ");
+                users.LastName = Console.ReadLine();
+                Console.WriteLine("Enter password: ");
+                users.EMail =  Console.ReadLine();
+                Console.WriteLine("Enter username: ");
+                users.Username = Console.ReadLine();
+                Console.WriteLine("Enter password: ");
+                users.Password = Console.ReadLine();
+                usersBusiness.Update(users);
+                Console.WriteLine("Data changed successfully");
+                UserInput();
             }
             else
             {
-                Console.WriteLine("Bank account not found!");
+                Console.WriteLine("User not found!");
+                UserInput();
             }
         }
 
-        private void AddBankAccount()
+        private void DeleteUser()
         {
-            Bank bankAccount = new Bank();
-            Console.WriteLine("Enter number of the bank account: ");
-            bankAccount.Name = Console.ReadLine();
-            Console.WriteLine("Enter balance: ");
-            bankAccount.Balance = decimal.Parse(Console.ReadLine());
-            bankBusiness.Add(bankAccount);
-        }
-
-        private void ListAllBankAccounts()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.WriteLine(new string(' ', 16) + "Bank accounts" + new string(' ', 16));
-            Console.WriteLine(new string('-', 40));
-            var bankAccounts = bankBusiness.GetAll();
-            foreach (var item in bankAccounts)
+            Console.Write("Enter id to delete a user: ");
+            int id = int.Parse(Console.ReadLine());
+            Users users = usersBusiness.Get(id);
+            if (users != null) 
             {
-                Console.WriteLine("{0} {1} {2}", item.Id, item.Name, item.Balance);
+                usersBusiness.Delete(id);
+                Console.WriteLine("The user is deleted...");
+                UserInput();
+                
+            }
+            else
+            {
+                Console.WriteLine("User not found!");
+                UserInput();
             }
         }
+
 
         #endregion
 
@@ -145,7 +206,8 @@ namespace testProject.Presentation
             Console.WriteLine("2. Machines Commands");
             Console.WriteLine("3. Enegry Sources Commands");
             Console.WriteLine("4. Bank Commands");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. User Commands");
+            Console.WriteLine("6. Exit");
 
         }
         private void MainInput()
@@ -170,6 +232,9 @@ namespace testProject.Presentation
                         BankInput();
                         break;
                     case 5:
+                        UserInput();
+                        break;
+                    case 6:
                         Environment.Exit(0);
                         break;
                     default:
@@ -177,12 +242,10 @@ namespace testProject.Presentation
                 }
             } while (operation != closeMainOperationId);
         }
-
         #endregion
 
         #region Product Options
-
-        private int closeCarOperationId = 8;
+        private int closeProductOperationId = 8;
         private ProductBusiness productBusiness = new ProductBusiness();
         private void ShowProductMenu()
         {
@@ -236,7 +299,7 @@ namespace testProject.Presentation
                     default:
                         break;
                 }
-            } while (operation != closeCarOperationId);
+            } while (operation != closeProductOperationId);
         }
 
         private void DeleteProduct()

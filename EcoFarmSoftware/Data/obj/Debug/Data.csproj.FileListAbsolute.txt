@@ -1,3 +1,15 @@
 C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.AssemblyReference.cache
 C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.SuggestedBindingRedirects.cache
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\Data.exe.config
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\Data.exe
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\Data.pdb
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\EntityFramework.dll
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\EntityFramework.xml
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.exe
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.pdb

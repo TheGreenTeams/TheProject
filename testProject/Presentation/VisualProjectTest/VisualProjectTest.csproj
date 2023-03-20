@@ -76,6 +76,12 @@
     <Compile Include="InfoProductForm.Designer.cs">
       <DependentUpon>InfoProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="New test desing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New test desing.Designer.cs">
+      <DependentUpon>New test desing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SellProductForm.cs">
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HelpForm.resx">
       <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New test desing.resx">
+      <DependentUpon>New test desing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

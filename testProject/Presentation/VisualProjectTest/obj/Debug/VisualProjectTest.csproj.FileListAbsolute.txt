@@ -11,3 +11,16 @@ C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\Visual
 C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.AddNewProductForm.resources
 C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.csproj.SuggestedBindingRedirects.cache
 C:\Users\Eli\Desktop\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.HelpForm.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\bin\Debug\VisualProjectTest.exe.config
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\bin\Debug\VisualProjectTest.exe
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\bin\Debug\VisualProjectTest.pdb
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.csprojAssemblyReference.cache
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.AddNewProductForm.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.Form1.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.HelpForm.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.New_test_desing.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.Properties.Resources.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.csproj.GenerateResource.cache
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.csproj.CoreCompileInputs.cache
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.exe
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\VisualProjectTest\obj\Debug\VisualProjectTest.pdb

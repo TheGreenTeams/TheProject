@@ -80,7 +80,7 @@
             this.productButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.productButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.productButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.productButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.productButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.productButton.ForeColor = System.Drawing.Color.Black;
             this.productButton.Image = ((System.Drawing.Image)(resources.GetObject("productButton.Image")));
             this.productButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -102,7 +102,7 @@
             this.exitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.exitButton.Location = new System.Drawing.Point(68, 606);
@@ -124,7 +124,7 @@
             this.machineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.machineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.machineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.machineButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.machineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.machineButton.Image = ((System.Drawing.Image)(resources.GetObject("machineButton.Image")));
             this.machineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.machineButton.Location = new System.Drawing.Point(16, 188);
@@ -145,7 +145,7 @@
             this.bankButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.bankButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.bankButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bankButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bankButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bankButton.Image = ((System.Drawing.Image)(resources.GetObject("bankButton.Image")));
             this.bankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bankButton.Location = new System.Drawing.Point(16, 457);
@@ -166,7 +166,7 @@
             this.energySourcesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.energySourcesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.energySourcesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.energySourcesButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.energySourcesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.energySourcesButton.Image = ((System.Drawing.Image)(resources.GetObject("energySourcesButton.Image")));
             this.energySourcesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.energySourcesButton.Location = new System.Drawing.Point(16, 322);
@@ -182,7 +182,7 @@
             // 
             this.sellProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.sellProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sellProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sellProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.sellProductButton.Image = ((System.Drawing.Image)(resources.GetObject("sellProductButton.Image")));
             this.sellProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sellProductButton.Location = new System.Drawing.Point(1211, 13);
@@ -197,7 +197,7 @@
             // 
             this.deleteProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.deleteProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.deleteProductButton.Image = ((System.Drawing.Image)(resources.GetObject("deleteProductButton.Image")));
             this.deleteProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.deleteProductButton.Location = new System.Drawing.Point(1024, 13);
@@ -212,7 +212,7 @@
             // 
             this.infoProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.infoProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.infoProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.infoProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.infoProductButton.Image = ((System.Drawing.Image)(resources.GetObject("infoProductButton.Image")));
             this.infoProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.infoProductButton.Location = new System.Drawing.Point(837, 13);
@@ -237,7 +237,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(415, 330);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -247,7 +247,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(415, 199);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -257,7 +257,7 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(415, 262);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -267,7 +267,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(415, 395);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -277,45 +277,45 @@
             // 
             // txtProductName
             // 
-            this.txtProductName.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtProductName.Location = new System.Drawing.Point(567, 199);
             this.txtProductName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(252, 36);
+            this.txtProductName.Size = new System.Drawing.Size(252, 37);
             this.txtProductName.TabIndex = 29;
             // 
             // txtProductPrice
             // 
-            this.txtProductPrice.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtProductPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtProductPrice.Location = new System.Drawing.Point(567, 262);
             this.txtProductPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductPrice.Name = "txtProductPrice";
-            this.txtProductPrice.Size = new System.Drawing.Size(252, 36);
+            this.txtProductPrice.Size = new System.Drawing.Size(252, 37);
             this.txtProductPrice.TabIndex = 30;
             // 
             // txtProductStock
             // 
-            this.txtProductStock.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtProductStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtProductStock.Location = new System.Drawing.Point(567, 330);
             this.txtProductStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductStock.Name = "txtProductStock";
-            this.txtProductStock.Size = new System.Drawing.Size(252, 36);
+            this.txtProductStock.Size = new System.Drawing.Size(252, 37);
             this.txtProductStock.TabIndex = 31;
             // 
             // txtProductType
             // 
-            this.txtProductType.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtProductType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtProductType.Location = new System.Drawing.Point(567, 395);
             this.txtProductType.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductType.Name = "txtProductType";
-            this.txtProductType.Size = new System.Drawing.Size(252, 36);
+            this.txtProductType.Size = new System.Drawing.Size(252, 37);
             this.txtProductType.TabIndex = 32;
             // 
             // backProductButton
             // 
             this.backProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.backProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.backProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.backProductButton.Image = ((System.Drawing.Image)(resources.GetObject("backProductButton.Image")));
             this.backProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.backProductButton.Location = new System.Drawing.Point(1281, 635);
@@ -331,7 +331,7 @@
             // 
             this.helpProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.helpProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.helpProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.helpProductButton.Image = ((System.Drawing.Image)(resources.GetObject("helpProductButton.Image")));
             this.helpProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.helpProductButton.Location = new System.Drawing.Point(1095, 635);
@@ -347,7 +347,7 @@
             // 
             this.updateProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.updateProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updateProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.updateProductButton.Image = ((System.Drawing.Image)(resources.GetObject("updateProductButton.Image")));
             this.updateProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.updateProductButton.Location = new System.Drawing.Point(651, 13);
@@ -362,7 +362,7 @@
             // 
             this.addProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.addProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addProductButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.addProductButton.Image = ((System.Drawing.Image)(resources.GetObject("addProductButton.Image")));
             this.addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addProductButton.Location = new System.Drawing.Point(464, 13);

@@ -63,7 +63,7 @@
             this.exitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.exitButton.Location = new System.Drawing.Point(51, 492);
@@ -84,7 +84,7 @@
             this.machineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.machineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.machineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.machineButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.machineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.machineButton.Image = ((System.Drawing.Image)(resources.GetObject("machineButton.Image")));
             this.machineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.machineButton.Location = new System.Drawing.Point(12, 153);
@@ -104,7 +104,7 @@
             this.bankButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.bankButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.bankButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bankButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bankButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bankButton.Image = ((System.Drawing.Image)(resources.GetObject("bankButton.Image")));
             this.bankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bankButton.Location = new System.Drawing.Point(12, 371);
@@ -124,7 +124,7 @@
             this.energySourcesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.energySourcesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.energySourcesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.energySourcesButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.energySourcesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.energySourcesButton.Image = ((System.Drawing.Image)(resources.GetObject("energySourcesButton.Image")));
             this.energySourcesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.energySourcesButton.Location = new System.Drawing.Point(12, 262);
@@ -145,7 +145,7 @@
             this.productButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.productButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.productButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.productButton.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.productButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.productButton.ForeColor = System.Drawing.Color.Black;
             this.productButton.Image = ((System.Drawing.Image)(resources.GetObject("productButton.Image")));
             this.productButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,7 +161,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(278, 138);
+            this.pictureBox1.Location = new System.Drawing.Point(546, 231);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(273, 276);
             this.pictureBox1.TabIndex = 3;

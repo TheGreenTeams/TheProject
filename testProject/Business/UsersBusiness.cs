@@ -19,7 +19,13 @@ namespace testProject.Business
             }
         }
 
-        
+        public Users Get(int id)
+        {
+            using (usersContext = new UsersContext())
+            {
+                return usersContext.Userss.Find(id);
+            }
+        }
 
         public void Add(Users users)
         {
@@ -39,7 +45,10 @@ namespace testProject.Business
                     usersContext.SaveChanges();
                 }
                 else
+                {
                     Console.WriteLine("Username is already taken!");
+                }
+
                 
             }
         }
@@ -48,7 +57,7 @@ namespace testProject.Business
         {
             using (usersContext = new UsersContext())
             {
-                var item = usersContext.Userss.Find(users.Username);
+                var item = usersContext.Userss.Find(users.Id);
                 if (item != null)
                 {
                     usersContext.Entry(item).CurrentValues.SetValues(users);
@@ -58,11 +67,11 @@ namespace testProject.Business
             }
         }
 
-        public void Delete(string username)
+        public void Delete(int id)
         {
             using (usersContext = new UsersContext())
             {
-                var user = usersContext.Userss.Find(username);
+                var user = usersContext.Userss.Find(id);
                 if (user != null)
                 {
                     usersContext.Userss.Remove(user);
@@ -70,5 +79,5 @@ namespace testProject.Business
                 }
             }
         }
-    }
+    }   
 }

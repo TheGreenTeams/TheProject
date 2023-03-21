@@ -11,7 +11,6 @@ namespace EcoFarmSoftware
     class Program
     {
         static void Main()
-        
         {
             ConsoleInterface a = new ConsoleInterface();
         }

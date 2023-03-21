@@ -98,6 +98,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSignIn.Designer.cs">
+      <DependentUpon>UserSignIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Machine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogIn.Designer.cs">
+      <DependentUpon>UserLogIn.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bank.resx">
       <DependentUpon>Bank.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSignIn.resx">
+      <DependentUpon>UserSignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Machine.resx">
       <DependentUpon>Machine.cs</DependentUpon>
@@ -184,6 +199,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserLogIn.resx">
+      <DependentUpon>UserLogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -199,6 +217,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\EcoFarmSoftware\Business\Business.csproj">
+      <Project>{b8b64c20-9d51-4b02-836d-0321677e7329}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EcoFarmSoftware\Data\Data.csproj">
+      <Project>{025d74b5-44df-41a7-a8a7-0063de4b0cf3}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\testProject.csproj">
       <Project>{c712f909-8f5f-4301-a8c2-fb4acb1d05bf}</Project>
       <Name>testProject</Name>

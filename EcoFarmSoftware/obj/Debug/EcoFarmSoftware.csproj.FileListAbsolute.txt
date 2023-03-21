@@ -19,3 +19,6 @@ C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\Business.dll
 C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\Data.dll
 C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\Business.dll.config
 C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\Data.dll.config
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\TheFarm.exe
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\TheFarm.pdb
+C:\Users\TsDafov\Desktop\TheProject\EcoFarmSoftware\bin\Debug\TheFarm.exe.config

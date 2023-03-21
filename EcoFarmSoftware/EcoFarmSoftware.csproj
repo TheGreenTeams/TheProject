@@ -35,6 +35,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -62,6 +66,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\testProject\Presentation\TheFarm\TheFarm.csproj">
+      <Project>{ffe3b96c-f667-4c80-9a20-84e7a71d4dfd}</Project>
+      <Name>TheFarm</Name>
+    </ProjectReference>
     <ProjectReference Include="Business\Business.csproj">
       <Project>{b8b64c20-9d51-4b02-836d-0321677e7329}</Project>
       <Name>Business</Name>

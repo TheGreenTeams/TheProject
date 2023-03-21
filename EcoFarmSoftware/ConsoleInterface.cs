@@ -98,34 +98,33 @@ namespace EcoFarmSoftware
 
         public void UserLogIn()
         {
-            var users = new Users();
+            //var users = new Users();
             var usersContext = new EcoFarmSoftwareContext();
-            using (usersContext)
-            {
+            
                 Console.WriteLine(new string('-', 40));
                 Console.WriteLine(new string(' ', 16) + "LOG IN" + new string(' ', 16));
                 Console.WriteLine(new string('-', 40));
                 Console.Write("Enter your username: ");
-                users.Username = Console.ReadLine();
+                string Username = Console.ReadLine();
                 Console.Write("Enter your password: ");
-                users.Password = Console.ReadLine();
-                try
-                {
+                string Password = Console.ReadLine();
+                //try
+                //{
                     foreach (var item in usersContext.Userss)
                     {
-                        if (item.Username == users.Username && item.Password == users.Password)
+                        if (item.Username == Username && item.Password == Password)
                         {
                             Console.WriteLine("You have successfully logged in!");
                             MainInput();
                             break;
                         }
                     }
-                }
-                catch
-                {
-                    Console.WriteLine("Your username or password may be incorrect, try again!");
-                }
-            }
+                //}
+                //catch
+                //{
+                //    Console.WriteLine("Your username or password may be incorrect, try again!");
+                //}
+            
         }
 
         private void ListAllUsers()

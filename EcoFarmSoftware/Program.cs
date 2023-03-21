@@ -15,7 +15,6 @@ namespace EcoFarmSoftware
     {
         //[STAThread]
         static void Main()
-        
         {
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);

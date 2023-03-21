@@ -21,7 +21,7 @@ namespace TheFarm
 
         private void exitButton_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
         private void EnergySource_Load(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace TheFarm
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
         private void infoProductButton_Click(object sender, EventArgs e)

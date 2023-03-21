@@ -40,7 +40,7 @@ namespace testProject.TheFarm
 
         private void exitButton_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
         private void helpProductButton_Click(object sender, EventArgs e)

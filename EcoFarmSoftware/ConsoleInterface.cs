@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Eventing.Reader;
 
 namespace EcoFarmSoftware
 {
@@ -98,33 +99,35 @@ namespace EcoFarmSoftware
 
         public void UserLogIn()
         {
-            //var users = new Users();
             var usersContext = new EcoFarmSoftwareContext();
-            
-                Console.WriteLine(new string('-', 40));
-                Console.WriteLine(new string(' ', 16) + "LOG IN" + new string(' ', 16));
-                Console.WriteLine(new string('-', 40));
-                Console.Write("Enter your username: ");
-                string Username = Console.ReadLine();
-                Console.Write("Enter your password: ");
-                string Password = Console.ReadLine();
-                //try
-                //{
-                    foreach (var item in usersContext.Userss)
-                    {
-                        if (item.Username == Username && item.Password == Password)
-                        {
-                            Console.WriteLine("You have successfully logged in!");
-                            MainInput();
-                            break;
-                        }
-                    }
-                //}
-                //catch
-                //{
-                //    Console.WriteLine("Your username or password may be incorrect, try again!");
-                //}
-            
+
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 16) + "LOG IN" + new string(' ', 16));
+            Console.WriteLine(new string('-', 40));
+            Console.Write("Enter your username: ");
+            string Username = Console.ReadLine();
+            Console.Write("Enter your password: ");
+            string Password = Console.ReadLine();
+
+            bool loggedIn = false;
+
+            foreach (var item in usersContext.Userss)
+            {
+                if (item.Username == Username && item.Password == Password)
+                {
+                    Console.WriteLine("You have successfully logged in!");
+                    loggedIn = true;
+                    break;
+                }
+            }
+            if (loggedIn == true)
+            {
+                MainInput();
+            }
+            else
+            {
+                Console.WriteLine("Your username or password might be incorrect! Try again!");
+            }
         }
 
         private void ListAllUsers()

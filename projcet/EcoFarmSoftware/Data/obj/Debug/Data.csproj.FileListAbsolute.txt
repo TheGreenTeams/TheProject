@@ -22,3 +22,15 @@ C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\bin\Debug\EntityFramework.S
 C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.dll
 C:\Users\Eli\Desktop\TheProject\EcoFarmSoftware\Data\obj\Debug\Data.pdb
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\Data.dll.config
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\Data.dll
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\Data.pdb
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\EntityFramework.dll
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\EntityFramework.xml
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\obj\Debug\Data.dll
+C:\Users\TsDafov\Desktop\TheProject\projcet\EcoFarmSoftware\Data\obj\Debug\Data.pdb

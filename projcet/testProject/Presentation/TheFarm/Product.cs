@@ -208,7 +208,7 @@ namespace testProject.TheFarm
             }
         }
 
-        //Sell (Not working)
+        //Sell 
         private void sellProductButton_Click(object sender, EventArgs e)
         {
             label1.Visible = false;
@@ -218,15 +218,11 @@ namespace testProject.TheFarm
             txtProductName.Visible = false;
             txtProductPrice.Visible = false;
             txtProductType.Visible = false;
+            label7.Visible = true;
+            button1.Visible = true;
 
 
-            var item = productDataView.SelectedRows[0].Cells;
-            var id = int.Parse(item[0].Value.ToString());
-            editId = id;
-            Sell(id);
-            UpdateTextboxes(id);
-            UpdateGrid();
-            DisableSelect();
+            
         }
 
         //Info
@@ -247,6 +243,41 @@ namespace testProject.TheFarm
 
         }
 
-        
+        //Sell 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            var item = productDataView.SelectedRows[0].Cells;
+            var id = int.Parse(item[0].Value.ToString());
+            Products product = productBusiness.Get(id);
+            editId = id;
+            Sell(id);
+            //UpdateTextboxes(id);
+            
+            decimal money = product.Price * int.Parse(txtProductStock.Text); // price * stock
+            label8.Visible = true;
+            //decimal money = product.Price;
+            label8.Text = $"You received {money}lv.";
+
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            txtProductName.Visible = true;
+            txtProductPrice.Visible = true;
+            txtProductType.Visible = true;
+            label7.Visible = false;
+            button1.Visible = false;
+            txtProductStock.Clear();
+
+            UpdateGrid();
+            //DisableSelect();
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.productButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
@@ -55,13 +56,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ShowInfo = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(107)))), ((int)(((byte)(75)))));
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.productButton);
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.machineButton);
@@ -71,27 +76,38 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 702);
+            this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label6.Location = new System.Drawing.Point(44, 51);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(261, 98);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Menu";
             // 
             // productButton
             // 
             this.productButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.productButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
+            this.productButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(193)))), ((int)(((byte)(120)))));
             this.productButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.productButton.FlatAppearance.BorderSize = 0;
             this.productButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.productButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.productButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.productButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.productButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.productButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productButton.ForeColor = System.Drawing.Color.Black;
             this.productButton.Image = ((System.Drawing.Image)(resources.GetObject("productButton.Image")));
             this.productButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.productButton.Location = new System.Drawing.Point(16, 52);
+            this.productButton.Location = new System.Drawing.Point(26, 199);
             this.productButton.Margin = new System.Windows.Forms.Padding(4);
             this.productButton.Name = "productButton";
-            this.productButton.Size = new System.Drawing.Size(283, 116);
+            this.productButton.Size = new System.Drawing.Size(303, 97);
             this.productButton.TabIndex = 37;
             this.productButton.Text = "Product";
             this.productButton.UseVisualStyleBackColor = false;
@@ -99,17 +115,17 @@
             // 
             // exitButton
             // 
-            this.exitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
+            this.exitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.exitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exitButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exitButton.Location = new System.Drawing.Point(68, 606);
+            this.exitButton.Location = new System.Drawing.Point(91, 743);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(179, 43);
@@ -121,20 +137,20 @@
             // machineButton
             // 
             this.machineButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.machineButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
+            this.machineButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.machineButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.machineButton.FlatAppearance.BorderSize = 0;
             this.machineButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.machineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.machineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.machineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.machineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.machineButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.machineButton.Image = ((System.Drawing.Image)(resources.GetObject("machineButton.Image")));
             this.machineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.machineButton.Location = new System.Drawing.Point(16, 188);
+            this.machineButton.Location = new System.Drawing.Point(26, 335);
             this.machineButton.Margin = new System.Windows.Forms.Padding(4);
             this.machineButton.Name = "machineButton";
-            this.machineButton.Size = new System.Drawing.Size(283, 116);
+            this.machineButton.Size = new System.Drawing.Size(303, 97);
             this.machineButton.TabIndex = 2;
             this.machineButton.Text = "    Machines";
             this.machineButton.UseVisualStyleBackColor = false;
@@ -142,20 +158,20 @@
             // 
             // bankButton
             // 
-            this.bankButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
+            this.bankButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.bankButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.bankButton.FlatAppearance.BorderSize = 0;
             this.bankButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.bankButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.bankButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.bankButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bankButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bankButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bankButton.Image = ((System.Drawing.Image)(resources.GetObject("bankButton.Image")));
             this.bankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bankButton.Location = new System.Drawing.Point(16, 457);
+            this.bankButton.Location = new System.Drawing.Point(26, 604);
             this.bankButton.Margin = new System.Windows.Forms.Padding(4);
             this.bankButton.Name = "bankButton";
-            this.bankButton.Size = new System.Drawing.Size(283, 116);
+            this.bankButton.Size = new System.Drawing.Size(303, 97);
             this.bankButton.TabIndex = 4;
             this.bankButton.Text = "Bank";
             this.bankButton.UseVisualStyleBackColor = false;
@@ -163,20 +179,20 @@
             // 
             // energySourcesButton
             // 
-            this.energySourcesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
+            this.energySourcesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.energySourcesButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.energySourcesButton.FlatAppearance.BorderSize = 0;
             this.energySourcesButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
             this.energySourcesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.energySourcesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(201)))), ((int)(((byte)(166)))));
             this.energySourcesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.energySourcesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.energySourcesButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.energySourcesButton.Image = ((System.Drawing.Image)(resources.GetObject("energySourcesButton.Image")));
             this.energySourcesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.energySourcesButton.Location = new System.Drawing.Point(16, 322);
+            this.energySourcesButton.Location = new System.Drawing.Point(26, 469);
             this.energySourcesButton.Margin = new System.Windows.Forms.Padding(4);
             this.energySourcesButton.Name = "energySourcesButton";
-            this.energySourcesButton.Size = new System.Drawing.Size(283, 116);
+            this.energySourcesButton.Size = new System.Drawing.Size(303, 97);
             this.energySourcesButton.TabIndex = 3;
             this.energySourcesButton.Text = "Energy\r\nSources\r\n";
             this.energySourcesButton.UseVisualStyleBackColor = false;
@@ -184,12 +200,12 @@
             // 
             // sellProductButton
             // 
-            this.sellProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.sellProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.sellProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sellProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sellProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sellProductButton.Image = ((System.Drawing.Image)(resources.GetObject("sellProductButton.Image")));
             this.sellProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sellProductButton.Location = new System.Drawing.Point(1211, 13);
+            this.sellProductButton.Location = new System.Drawing.Point(1266, 30);
             this.sellProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.sellProductButton.Name = "sellProductButton";
             this.sellProductButton.Size = new System.Drawing.Size(179, 39);
@@ -200,12 +216,12 @@
             // 
             // deleteProductButton
             // 
-            this.deleteProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.deleteProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.deleteProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteProductButton.Image = ((System.Drawing.Image)(resources.GetObject("deleteProductButton.Image")));
             this.deleteProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.deleteProductButton.Location = new System.Drawing.Point(1024, 13);
+            this.deleteProductButton.Location = new System.Drawing.Point(1079, 30);
             this.deleteProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.deleteProductButton.Name = "deleteProductButton";
             this.deleteProductButton.Size = new System.Drawing.Size(179, 39);
@@ -216,12 +232,12 @@
             // 
             // infoProductButton
             // 
-            this.infoProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.infoProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.infoProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.infoProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.infoProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoProductButton.Image = ((System.Drawing.Image)(resources.GetObject("infoProductButton.Image")));
             this.infoProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infoProductButton.Location = new System.Drawing.Point(837, 13);
+            this.infoProductButton.Location = new System.Drawing.Point(892, 30);
             this.infoProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.infoProductButton.Name = "infoProductButton";
             this.infoProductButton.Size = new System.Drawing.Size(179, 39);
@@ -232,19 +248,19 @@
             // 
             // productDataView
             // 
-            this.productDataView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(242)))), ((int)(((byte)(213)))));
+            this.productDataView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.productDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productDataView.Location = new System.Drawing.Point(908, 98);
+            this.productDataView.Location = new System.Drawing.Point(908, 114);
             this.productDataView.Margin = new System.Windows.Forms.Padding(4);
             this.productDataView.Name = "productDataView";
             this.productDataView.RowHeadersWidth = 51;
-            this.productDataView.Size = new System.Drawing.Size(552, 512);
+            this.productDataView.Size = new System.Drawing.Size(614, 554);
             this.productDataView.TabIndex = 24;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(415, 330);
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(425, 416);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 43);
@@ -253,8 +269,8 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(415, 199);
+            this.label2.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(425, 285);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 43);
@@ -263,8 +279,8 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(415, 262);
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(425, 348);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 43);
@@ -273,8 +289,8 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(415, 395);
+            this.label4.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(425, 481);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 43);
@@ -284,50 +300,50 @@
             // txtProductName
             // 
             this.txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtProductName.Location = new System.Drawing.Point(567, 199);
+            this.txtProductName.Location = new System.Drawing.Point(577, 285);
             this.txtProductName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(252, 31);
+            this.txtProductName.Size = new System.Drawing.Size(252, 37);
             this.txtProductName.TabIndex = 29;
             // 
             // txtProductPrice
             // 
             this.txtProductPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtProductPrice.Location = new System.Drawing.Point(567, 262);
+            this.txtProductPrice.Location = new System.Drawing.Point(577, 348);
             this.txtProductPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductPrice.Name = "txtProductPrice";
-            this.txtProductPrice.Size = new System.Drawing.Size(252, 31);
+            this.txtProductPrice.Size = new System.Drawing.Size(252, 37);
             this.txtProductPrice.TabIndex = 30;
             // 
             // txtProductStock
             // 
             this.txtProductStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtProductStock.Location = new System.Drawing.Point(567, 330);
+            this.txtProductStock.Location = new System.Drawing.Point(577, 416);
             this.txtProductStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductStock.Name = "txtProductStock";
-            this.txtProductStock.Size = new System.Drawing.Size(252, 31);
+            this.txtProductStock.Size = new System.Drawing.Size(252, 37);
             this.txtProductStock.TabIndex = 31;
             // 
             // txtProductType
             // 
             this.txtProductType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtProductType.Location = new System.Drawing.Point(567, 395);
+            this.txtProductType.Location = new System.Drawing.Point(577, 481);
             this.txtProductType.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductType.Name = "txtProductType";
-            this.txtProductType.Size = new System.Drawing.Size(252, 31);
+            this.txtProductType.Size = new System.Drawing.Size(252, 37);
             this.txtProductType.TabIndex = 32;
             // 
             // backProductButton
             // 
-            this.backProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.backProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.backProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.backProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backProductButton.Image = ((System.Drawing.Image)(resources.GetObject("backProductButton.Image")));
             this.backProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.backProductButton.Location = new System.Drawing.Point(1281, 635);
+            this.backProductButton.Location = new System.Drawing.Point(1324, 698);
             this.backProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.backProductButton.Name = "backProductButton";
-            this.backProductButton.Size = new System.Drawing.Size(179, 39);
+            this.backProductButton.Size = new System.Drawing.Size(198, 39);
             this.backProductButton.TabIndex = 34;
             this.backProductButton.Text = "Home";
             this.backProductButton.UseVisualStyleBackColor = false;
@@ -335,15 +351,15 @@
             // 
             // helpProductButton
             // 
-            this.helpProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.helpProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.helpProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.helpProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpProductButton.Image = ((System.Drawing.Image)(resources.GetObject("helpProductButton.Image")));
             this.helpProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.helpProductButton.Location = new System.Drawing.Point(1095, 635);
+            this.helpProductButton.Location = new System.Drawing.Point(1117, 698);
             this.helpProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.helpProductButton.Name = "helpProductButton";
-            this.helpProductButton.Size = new System.Drawing.Size(179, 39);
+            this.helpProductButton.Size = new System.Drawing.Size(198, 39);
             this.helpProductButton.TabIndex = 33;
             this.helpProductButton.Text = "Help";
             this.helpProductButton.UseVisualStyleBackColor = false;
@@ -351,12 +367,12 @@
             // 
             // updateProductButton
             // 
-            this.updateProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.updateProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.updateProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updateProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateProductButton.Image = ((System.Drawing.Image)(resources.GetObject("updateProductButton.Image")));
             this.updateProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.updateProductButton.Location = new System.Drawing.Point(651, 13);
+            this.updateProductButton.Location = new System.Drawing.Point(706, 30);
             this.updateProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateProductButton.Name = "updateProductButton";
             this.updateProductButton.Size = new System.Drawing.Size(179, 39);
@@ -367,12 +383,12 @@
             // 
             // addProductButton
             // 
-            this.addProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.addProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.addProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addProductButton.Image = ((System.Drawing.Image)(resources.GetObject("addProductButton.Image")));
             this.addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addProductButton.Location = new System.Drawing.Point(464, 13);
+            this.addProductButton.Location = new System.Drawing.Point(519, 30);
             this.addProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(179, 39);
@@ -383,15 +399,15 @@
             // 
             // saveProductButton
             // 
-            this.saveProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(217)))), ((int)(((byte)(161)))));
+            this.saveProductButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.saveProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveProductButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveProductButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveProductButton.Image = ((System.Drawing.Image)(resources.GetObject("saveProductButton.Image")));
             this.saveProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveProductButton.Location = new System.Drawing.Point(908, 635);
+            this.saveProductButton.Location = new System.Drawing.Point(911, 698);
             this.saveProductButton.Margin = new System.Windows.Forms.Padding(4);
             this.saveProductButton.Name = "saveProductButton";
-            this.saveProductButton.Size = new System.Drawing.Size(179, 39);
+            this.saveProductButton.Size = new System.Drawing.Size(198, 39);
             this.saveProductButton.TabIndex = 38;
             this.saveProductButton.Text = "Save";
             this.saveProductButton.UseVisualStyleBackColor = false;
@@ -400,10 +416,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(415, 140);
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(425, 226);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 25);
+            this.label5.Size = new System.Drawing.Size(132, 32);
             this.label5.TabIndex = 39;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
@@ -411,31 +427,71 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(567, 140);
+            this.textBox1.Location = new System.Drawing.Point(577, 226);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
+            this.textBox1.Size = new System.Drawing.Size(100, 37);
             this.textBox1.TabIndex = 40;
             this.textBox1.Visible = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ShowInfo
             // 
-            this.ShowInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShowInfo.Location = new System.Drawing.Point(464, 485);
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowInfo.Location = new System.Drawing.Point(487, 604);
             this.ShowInfo.Name = "ShowInfo";
-            this.ShowInfo.Size = new System.Drawing.Size(252, 34);
+            this.ShowInfo.Size = new System.Drawing.Size(290, 45);
             this.ShowInfo.TabIndex = 41;
             this.ShowInfo.Text = "Show Information";
-            this.ShowInfo.UseVisualStyleBackColor = true;
+            this.ShowInfo.UseVisualStyleBackColor = false;
             this.ShowInfo.Visible = false;
             this.ShowInfo.Click += new System.EventHandler(this.ShowInfo_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.button1.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(487, 554);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(290, 44);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Sell it";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(395, 326);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(477, 32);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Еnter the desired quantity to sell:";
+            this.label7.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(465, 705);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(338, 32);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "You received {money}lv.";
+            this.label8.Visible = false;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(237)))), ((int)(((byte)(190)))));
-            this.ClientSize = new System.Drawing.Size(1535, 702);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(193)))), ((int)(((byte)(120)))));
+            this.ClientSize = new System.Drawing.Size(1609, 829);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ShowInfo);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
@@ -464,6 +520,7 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Product_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -498,5 +555,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button ShowInfo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

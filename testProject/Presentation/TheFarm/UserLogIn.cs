@@ -33,7 +33,7 @@ namespace TheFarm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var usersContext = new EcoFarmSoftwareContext();
+            EcoFarmSoftwareContext usersContext = new EcoFarmSoftwareContext();
 
             string Username = textBox1.Text;
             string Password = textBox2.Text;
@@ -43,16 +43,16 @@ namespace TheFarm
             {
                 if (item.Username == Username && item.Password == Password)
                 {
+                    er = true;
                     var mainMenu = new Form1();
                     mainMenu.Show();
-                    this.Hide();
-                    er = true;
+                    this.Hide();                  
                     break;
                 }
             }
             if (er == false)
             {
-                textBox1.Text = "bla bla";
+                textBox1.Text = "Incorect username or password!";
             }
         }
 

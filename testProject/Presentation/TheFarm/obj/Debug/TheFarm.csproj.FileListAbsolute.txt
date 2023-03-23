@@ -98,3 +98,11 @@ C:\Users\Eli\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Busin
 C:\Users\Eli\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Business.dll.config
 C:\Users\Eli\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Data.pdb
 C:\Users\Eli\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Data.dll.config
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\obj\Debug\TheFarm.Form2.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\obj\Debug\TheFarm.UserLogIn.resources
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Business.dll
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Data.dll
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Business.pdb
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Business.dll.config
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Data.pdb
+C:\Users\TsDafov\Desktop\TheProject\testProject\Presentation\TheFarm\bin\Debug\Data.dll.config

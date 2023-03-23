@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Eventing.Reader;
 
 namespace EcoFarmSoftware
 {
@@ -13,6 +14,7 @@ namespace EcoFarmSoftware
     {
         public ConsoleInterface()
         {
+            HardcodedData();
             UserInput();
         }
 
@@ -98,33 +100,35 @@ namespace EcoFarmSoftware
 
         public void UserLogIn()
         {
-            //var users = new Users();
             var usersContext = new EcoFarmSoftwareContext();
-            
-                Console.WriteLine(new string('-', 40));
-                Console.WriteLine(new string(' ', 16) + "LOG IN" + new string(' ', 16));
-                Console.WriteLine(new string('-', 40));
-                Console.Write("Enter your username: ");
-                string Username = Console.ReadLine();
-                Console.Write("Enter your password: ");
-                string Password = Console.ReadLine();
-                //try
-                //{
-                    foreach (var item in usersContext.Userss)
-                    {
-                        if (item.Username == Username && item.Password == Password)
-                        {
-                            Console.WriteLine("You have successfully logged in!");
-                            MainInput();
-                            break;
-                        }
-                    }
-                //}
-                //catch
-                //{
-                //    Console.WriteLine("Your username or password may be incorrect, try again!");
-                //}
-            
+
+            Console.WriteLine(new string('-', 40));
+            Console.WriteLine(new string(' ', 16) + "LOG IN" + new string(' ', 16));
+            Console.WriteLine(new string('-', 40));
+            Console.Write("Enter your username: ");
+            string Username = Console.ReadLine();
+            Console.Write("Enter your password: ");
+            string Password = Console.ReadLine();
+
+            bool loggedIn = false;
+
+            foreach (var item in usersContext.Userss)
+            {
+                if (item.Username == Username && item.Password == Password)
+                {
+                    Console.WriteLine("You have successfully logged in!");
+                    loggedIn = true;
+                    break;
+                }
+            }
+            if (loggedIn == true)
+            {
+                MainInput();
+            }
+            else
+            {
+                Console.WriteLine("Your username or password might be incorrect! Try again!");
+            }
         }
 
         private void ListAllUsers()
@@ -802,6 +806,95 @@ namespace EcoFarmSoftware
             }
         }
 
+        #endregion
+
+        #region Hardcoded Data
+        public void HardcodedData()
+        {
+            //Add machine
+            Business.MachinesBusiness machinesBusiness = new MachinesBusiness();
+
+            var machine = machinesBusiness.GetAll();
+
+            Machines hardcodedMachine = new Machines();
+            hardcodedMachine.Name = "";
+            hardcodedMachine.Type = "";
+            hardcodedMachine.WorkingCapacity = 0;
+
+            if (machine.Count == 0)
+            {
+                machinesBusiness.Add(hardcodedMachine);
+            }
+
+
+            //Add Product
+            ProductsBusiness productBusiness = new ProductsBusiness();
+
+            var product = productBusiness.GetAll();
+
+            Products hardcodedProduct = new Products();
+            hardcodedProduct.Name = "";
+            hardcodedProduct.Type = "";
+            hardcodedProduct.Price = 0;
+
+
+            if (product.Count == 0)
+            {
+                productBusiness.Add(hardcodedProduct);
+            }
+
+
+            //Add Bank
+            BankBusiness bankBusiness = new BankBusiness();
+
+            var bank = bankBusiness.GetAll();
+
+            Bank hardcodedBank = new Bank();
+            hardcodedBank.Name = "";
+            hardcodedBank.Balance = 0;
+            hardcodedBank.Type = "";
+
+            if (bank.Count == 0)
+            {
+                bankBusiness.Add(hardcodedBank);
+            }
+
+
+            //Add User
+            UsersBusiness userBusiness = new UsersBusiness();
+
+            var user = userBusiness.GetAll();
+
+            Users hardcodedUser = new Users();
+            hardcodedUser.Username = "";
+            hardcodedUser.Password = "";
+            hardcodedUser.EMail = "";
+            hardcodedUser.FirstName = "";
+            hardcodedUser.LastName = "";
+
+            if (user.Count == 0)
+            {
+                userBusiness.Add(hardcodedUser);
+            }
+
+            //Add EnergySource
+            EnergySourcesBusiness energySourcesBusiness = new EnergySourcesBusiness();
+
+            var energySources = energySourcesBusiness.GetAll();
+
+            EnergySources hardcodedEnergySources = new EnergySources();
+            hardcodedEnergySources.Name = "";
+            hardcodedEnergySources.Price = 0;
+            hardcodedEnergySources.Type = "";
+            hardcodedEnergySources.Area = 0;
+            hardcodedEnergySources.KWh = 0;
+
+
+            if (energySources.Count == 0)
+            {
+                energySourcesBusiness.Add(hardcodedEnergySources);
+            }
+        }
         #endregion
     }
 }

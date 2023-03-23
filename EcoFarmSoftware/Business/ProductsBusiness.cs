@@ -12,7 +12,7 @@ namespace Business
 {
     public class ProductsBusiness
     {
-        private EcoFarmSoftwareContext ecoFarmSoftwareContext;
+        public EcoFarmSoftwareContext ecoFarmSoftwareContext;
 
         public List<Products> GetAll()
         {

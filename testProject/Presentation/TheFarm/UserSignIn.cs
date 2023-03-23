@@ -35,16 +35,17 @@ namespace TheFarm
 
             users.FirstName = textBox1.Text;
             users.LastName = textBox2.Text;
-            users.EMail = textBox3.Text;
+            users.EMail = textBox4.Text;
 
-            while (!users.EMail.Contains("@email.com"))
+            if (!users.EMail.Contains("@email.com"))
             {
                 label4.Visible = true;
                 label4.Text = "Invalid Email Address! Try again!";
-                users.EMail = textBox3.Text;
+                users.EMail = textBox4.Text;
+                return;
             }
             users.EMail = users.EMail;
-            users.Username = textBox4.Text;
+            users.Username = textBox3.Text;
             users.Password = textBox5.Text;
             usersBusiness.Add(users);
 

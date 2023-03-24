@@ -21,12 +21,12 @@
 |../Display.cs| Y | Elit0o | Написан |
 | 04. NUnit tests | 🟥 0%|
 | ... | ... | ... | ... |
-|App.config| ... | ... | ....|
-| 05. Graphical Interface | 🟩 70%|
-|../Product.cs + Help | wip | Elit0o | - |
-|../Machines.cs + Help| wip | Elit0o | - |
-|../EnergySources.cs + Help| wip | Elit0o | - |
-|../Bank.cs + Help| wip | Elit0o | - |
+| 05. Graphical Interface | ✅ 100%|
+|../Product.cs + Help | Y | Elit0o, TsDafov | - |
+|../Machines.cs + Help| Y | Elit0o, TsDafov | - |
+|../EnergySources.cs + Help| Y | Elit0o, TsDafov | - |
+|../Bank.cs + Help| Y | Elit0o, TsDafov | - |
+|...Documentation| ✅ 100% | Elit0o, NeZnam0906|
 ✅🟩🟧🟥
 
 Указания:

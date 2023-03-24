@@ -3,6 +3,9 @@ using Business;
 using System.Windows.Forms;
 using TheFarm;
 using Data;
+using Data.Models;
+using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Linq;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 
@@ -11,6 +14,7 @@ namespace testProject.TheFarm
     public partial class Product : Form
     {
         private ProductsBusiness productBusiness = new ProductsBusiness();
+        private BankBusiness bankBusiness = new BankBusiness();
         private int editId = 0;
 
         public Product()
@@ -142,9 +146,9 @@ namespace testProject.TheFarm
         private void Sell(int id)
         {
             Products product = productBusiness.Get(id);
-            if (int.Parse(txtProductStock.Text) <= product.Stock)
+            if (int.Parse(textBox2.Text) <= product.Stock)
             {
-                product.Stock = product.Stock - int.Parse(txtProductStock.Text);
+                product.Stock = product.Stock - int.Parse(textBox2.Text);
                 productBusiness.Update(product);
             }
             else
@@ -220,9 +224,11 @@ namespace testProject.TheFarm
             txtProductType.Visible = false;
             label7.Visible = true;
             button1.Visible = true;
-
-
-            
+            textBox2.Visible = true;
+            textBox3.Visible = true;
+            label9.Visible = true;
+            label10.Visible = true;
+            txtProductStock.Visible = false;
         }
 
         //Info
@@ -251,13 +257,6 @@ namespace testProject.TheFarm
             var id = int.Parse(item[0].Value.ToString());
             Products product = productBusiness.Get(id);
             editId = id;
-            Sell(id);
-            //UpdateTextboxes(id);
-            
-            decimal money = product.Price * int.Parse(txtProductStock.Text); // price * stock
-            label8.Visible = true;
-            //decimal money = product.Price;
-            label8.Text = $"You received {money}lv.";
 
             label1.Visible = true;
             label2.Visible = true;
@@ -268,11 +267,40 @@ namespace testProject.TheFarm
             txtProductType.Visible = true;
             label7.Visible = false;
             button1.Visible = false;
-            txtProductStock.Clear();
+            textBox2.Visible = false;
+            txtProductStock.Visible = true;
+            textBox3.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
 
-            UpdateGrid();
-            //DisableSelect();
+           
+            string nameOfTheBanlAccount = textBox3.Text;
+            List <Bank> all = bankBusiness.GetAll();
+            bool iFoundIt = false;
+            
+            foreach (var theAccount in all)
+            {
+                if (theAccount.Name == nameOfTheBanlAccount)
+                {
+                    decimal money = product.Price * int.Parse(textBox2.Text); // price * stock
+                    theAccount.Balance += money;
+                    bankBusiness.Update(theAccount);
+                    label8.Visible = true;
+                    label8.Text = $"You received {money}lv.";
+                    iFoundIt = true;
+                    Sell(id);
+                    UpdateGrid();
+                    break;
+                }
+            }
 
+            if (iFoundIt == false)
+            {
+                MessageBox.Show("The bank account was not found!");
+            }
+
+            textBox2.Clear();
+            textBox3.Clear();
         }
 
         private void label8_Click(object sender, EventArgs e)

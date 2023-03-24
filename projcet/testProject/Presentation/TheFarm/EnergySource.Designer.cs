@@ -34,7 +34,6 @@
             this.infoEnergySourceButton = new System.Windows.Forms.Button();
             this.updateEnergySourceButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
             this.bankButton = new System.Windows.Forms.Button();
@@ -57,6 +56,7 @@
             this.ShowInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.energyDataView)).BeginInit();
             this.SuspendLayout();
@@ -128,7 +128,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(107)))), ((int)(((byte)(75)))));
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.machineButton);
             this.panel1.Controls.Add(this.bankButton);
@@ -140,17 +140,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 35;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label7.Location = new System.Drawing.Point(43, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(261, 98);
-            this.label7.TabIndex = 55;
-            this.label7.Text = "Menu";
             // 
             // exitButton
             // 
@@ -447,6 +436,17 @@
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label8.Location = new System.Drawing.Point(39, 35);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(275, 122);
+            this.label8.TabIndex = 55;
+            this.label8.Text = "MENU";
+            // 
             // EnergySource
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -517,6 +517,6 @@
         private System.Windows.Forms.Button ShowInfo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

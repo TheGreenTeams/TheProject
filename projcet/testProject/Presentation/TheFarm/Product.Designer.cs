@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,8 +60,20 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.bankBusinessBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bankBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ecoFarmSoftwareContextBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ecoFarmSoftwareContextBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,13 +95,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label6.Location = new System.Drawing.Point(44, 51);
+            this.label6.Location = new System.Drawing.Point(42, 39);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(261, 98);
+            this.label6.Size = new System.Drawing.Size(275, 122);
             this.label6.TabIndex = 42;
-            this.label6.Text = "Menu";
+            this.label6.Text = "MENU";
             // 
             // productButton
             // 
@@ -147,7 +160,7 @@
             this.machineButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.machineButton.Image = ((System.Drawing.Image)(resources.GetObject("machineButton.Image")));
             this.machineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.machineButton.Location = new System.Drawing.Point(26, 335);
+            this.machineButton.Location = new System.Drawing.Point(26, 326);
             this.machineButton.Margin = new System.Windows.Forms.Padding(4);
             this.machineButton.Name = "machineButton";
             this.machineButton.Size = new System.Drawing.Size(303, 97);
@@ -194,7 +207,7 @@
             this.energySourcesButton.Name = "energySourcesButton";
             this.energySourcesButton.Size = new System.Drawing.Size(303, 97);
             this.energySourcesButton.TabIndex = 3;
-            this.energySourcesButton.Text = "Energy\r\nSources\r\n";
+            this.energySourcesButton.Text = "  Energy\r\n  Sources\r\n";
             this.energySourcesButton.UseVisualStyleBackColor = false;
             this.energySourcesButton.Click += new System.EventHandler(this.energySourcesButton_Click);
             // 
@@ -464,7 +477,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(395, 326);
+            this.label7.Location = new System.Drawing.Point(408, 173);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(477, 32);
             this.label7.TabIndex = 43;
@@ -483,12 +496,76 @@
             this.label8.Visible = false;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(504, 226);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(252, 37);
+            this.textBox2.TabIndex = 45;
+            this.textBox2.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(504, 487);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(252, 37);
+            this.textBox3.TabIndex = 46;
+            this.textBox3.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(408, 345);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(471, 64);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "To which bank account you want \r\nto add the received amount?";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(390, 445);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(511, 32);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Enter the name of the bank account:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Visible = false;
+            // 
+            // bankBusinessBindingSource
+            // 
+            this.bankBusinessBindingSource.DataSource = typeof(Business.BankBusiness);
+            // 
+            // bankBindingSource
+            // 
+            this.bankBindingSource.DataSource = this.ecoFarmSoftwareContextBindingSource1;
+            // 
+            // ecoFarmSoftwareContextBindingSource
+            // 
+            this.ecoFarmSoftwareContextBindingSource.DataSource = typeof(Data.EcoFarmSoftwareContext);
+            // 
+            // ecoFarmSoftwareContextBindingSource1
+            // 
+            this.ecoFarmSoftwareContextBindingSource1.DataSource = typeof(Data.EcoFarmSoftwareContext);
+            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(193)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(1609, 829);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
@@ -522,6 +599,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -559,5 +640,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.BindingSource bankBusinessBindingSource;
+        private System.Windows.Forms.BindingSource bankBindingSource;
+        private System.Windows.Forms.BindingSource ecoFarmSoftwareContextBindingSource;
+        private System.Windows.Forms.BindingSource ecoFarmSoftwareContextBindingSource1;
     }
 }

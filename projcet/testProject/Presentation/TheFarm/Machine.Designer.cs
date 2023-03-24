@@ -34,7 +34,6 @@
             this.updateMachineButton = new System.Windows.Forms.Button();
             this.addMachinetButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
             this.bankButton = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@
             this.ShowInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machineDataView)).BeginInit();
             this.SuspendLayout();
@@ -124,7 +124,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(107)))), ((int)(((byte)(75)))));
-            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.machineButton);
             this.panel1.Controls.Add(this.bankButton);
@@ -136,17 +136,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 30;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label6.Location = new System.Drawing.Point(46, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(261, 98);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Menu";
             // 
             // exitButton
             // 
@@ -187,7 +176,7 @@
             this.machineButton.Name = "machineButton";
             this.machineButton.Size = new System.Drawing.Size(303, 97);
             this.machineButton.TabIndex = 2;
-            this.machineButton.Text = "Machines";
+            this.machineButton.Text = "    Machines";
             this.machineButton.UseVisualStyleBackColor = false;
             this.machineButton.Click += new System.EventHandler(this.machineButton_Click);
             // 
@@ -405,6 +394,17 @@
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label4.Location = new System.Drawing.Point(38, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(275, 122);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "MENU";
+            // 
             // Machine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -467,6 +467,6 @@
         private System.Windows.Forms.Button ShowInfo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }

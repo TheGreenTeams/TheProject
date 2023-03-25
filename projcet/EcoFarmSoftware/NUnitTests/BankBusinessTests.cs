@@ -101,12 +101,12 @@ namespace Business.Tests
         public void Update_ShouldUpdateExistingBank()
         {
             // Arrange
-            var bankToUpdate = bankBusiness.Get(2);
+            var bankToUpdate = bankBusiness.Get(4);
             bankToUpdate.Balance = 2000;
 
             // Act
             bankBusiness.Update(bankToUpdate);
-            var actualBank = bankBusiness.Get(2);
+            var actualBank = bankBusiness.Get(4);
 
             // Assert
             Assert.AreEqual(bankToUpdate.Balance, actualBank.Balance);
@@ -130,7 +130,7 @@ namespace Business.Tests
         public void AddMoney_ShouldIncreaseBankBalance()
         {
             // Arrange
-            var bank = bankBusiness.Get(2);
+            var bank = bankBusiness.Get(4);
             decimal initialBalance = bank.Balance;
             decimal amountToAdd = 500;
 
@@ -138,7 +138,7 @@ namespace Business.Tests
             bank.Balance += amountToAdd; 
             bankBusiness.Update(bank);
             //bankBusiness.AddMoney(2, amountToAdd);
-            var updatedBank = bankBusiness.Get(2);
+            var updatedBank = bankBusiness.Get(4);
 
             // Assert
             Assert.AreEqual(initialBalance + amountToAdd, updatedBank.Balance);
@@ -148,14 +148,14 @@ namespace Business.Tests
         public void TakeMoney_ShouldDecreaseBankBalance()
         {
             // Arrange
-            var bank = bankBusiness.Get(2);
+            var bank = bankBusiness.Get(4);
             var initialBalance = bank.Balance;
             var amountToTake = 500;
 
             // Act
             bank.Balance -= amountToTake;
             bankBusiness.Update(bank);
-            var updatedBank = bankBusiness.Get(2);
+            var updatedBank = bankBusiness.Get(4);
 
             // Assert
             Assert.AreEqual(initialBalance - amountToTake, updatedBank.Balance);

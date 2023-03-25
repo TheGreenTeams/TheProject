@@ -73,10 +73,9 @@
             this.deleteBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBankButton.Image = ((System.Drawing.Image)(resources.GetObject("deleteBankButton.Image")));
             this.deleteBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.deleteBankButton.Location = new System.Drawing.Point(1159, 47);
-            this.deleteBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteBankButton.Location = new System.Drawing.Point(869, 38);
             this.deleteBankButton.Name = "deleteBankButton";
-            this.deleteBankButton.Size = new System.Drawing.Size(179, 39);
+            this.deleteBankButton.Size = new System.Drawing.Size(134, 32);
             this.deleteBankButton.TabIndex = 33;
             this.deleteBankButton.Text = "Delete";
             this.deleteBankButton.UseVisualStyleBackColor = false;
@@ -89,10 +88,9 @@
             this.infoBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoBankButton.Image = ((System.Drawing.Image)(resources.GetObject("infoBankButton.Image")));
             this.infoBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infoBankButton.Location = new System.Drawing.Point(972, 47);
-            this.infoBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.infoBankButton.Location = new System.Drawing.Point(729, 38);
             this.infoBankButton.Name = "infoBankButton";
-            this.infoBankButton.Size = new System.Drawing.Size(179, 39);
+            this.infoBankButton.Size = new System.Drawing.Size(134, 32);
             this.infoBankButton.TabIndex = 32;
             this.infoBankButton.Text = "Info";
             this.infoBankButton.UseVisualStyleBackColor = false;
@@ -105,10 +103,9 @@
             this.updateBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBankButton.Image = ((System.Drawing.Image)(resources.GetObject("updateBankButton.Image")));
             this.updateBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.updateBankButton.Location = new System.Drawing.Point(786, 47);
-            this.updateBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.updateBankButton.Location = new System.Drawing.Point(590, 38);
             this.updateBankButton.Name = "updateBankButton";
-            this.updateBankButton.Size = new System.Drawing.Size(179, 39);
+            this.updateBankButton.Size = new System.Drawing.Size(134, 32);
             this.updateBankButton.TabIndex = 31;
             this.updateBankButton.Text = "Update";
             this.updateBankButton.UseVisualStyleBackColor = false;
@@ -125,9 +122,8 @@
             this.panel1.Controls.Add(this.productButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(356, 829);
+            this.panel1.Size = new System.Drawing.Size(267, 674);
             this.panel1.TabIndex = 35;
             // 
             // label7
@@ -135,9 +131,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label7.Location = new System.Drawing.Point(43, 33);
+            this.label7.Location = new System.Drawing.Point(32, 27);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(275, 122);
+            this.label7.Size = new System.Drawing.Size(219, 98);
             this.label7.TabIndex = 61;
             this.label7.Text = "MENU";
             // 
@@ -153,10 +150,9 @@
             this.exitButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exitButton.Location = new System.Drawing.Point(81, 738);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
+            this.exitButton.Location = new System.Drawing.Point(61, 600);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(179, 43);
+            this.exitButton.Size = new System.Drawing.Size(134, 35);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -175,10 +171,9 @@
             this.machineButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.machineButton.Image = ((System.Drawing.Image)(resources.GetObject("machineButton.Image")));
             this.machineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.machineButton.Location = new System.Drawing.Point(30, 319);
-            this.machineButton.Margin = new System.Windows.Forms.Padding(4);
+            this.machineButton.Location = new System.Drawing.Point(22, 259);
             this.machineButton.Name = "machineButton";
-            this.machineButton.Size = new System.Drawing.Size(303, 97);
+            this.machineButton.Size = new System.Drawing.Size(227, 79);
             this.machineButton.TabIndex = 2;
             this.machineButton.Text = "    Machines";
             this.machineButton.UseVisualStyleBackColor = false;
@@ -196,10 +191,9 @@
             this.bankButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bankButton.Image = ((System.Drawing.Image)(resources.GetObject("bankButton.Image")));
             this.bankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bankButton.Location = new System.Drawing.Point(30, 588);
-            this.bankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.bankButton.Location = new System.Drawing.Point(22, 478);
             this.bankButton.Name = "bankButton";
-            this.bankButton.Size = new System.Drawing.Size(303, 97);
+            this.bankButton.Size = new System.Drawing.Size(227, 79);
             this.bankButton.TabIndex = 4;
             this.bankButton.Text = "Bank";
             this.bankButton.UseVisualStyleBackColor = false;
@@ -217,10 +211,9 @@
             this.energySourcesButton.Font = new System.Drawing.Font("Lucida Sans", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.energySourcesButton.Image = ((System.Drawing.Image)(resources.GetObject("energySourcesButton.Image")));
             this.energySourcesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.energySourcesButton.Location = new System.Drawing.Point(30, 453);
-            this.energySourcesButton.Margin = new System.Windows.Forms.Padding(4);
+            this.energySourcesButton.Location = new System.Drawing.Point(22, 368);
             this.energySourcesButton.Name = "energySourcesButton";
-            this.energySourcesButton.Size = new System.Drawing.Size(303, 97);
+            this.energySourcesButton.Size = new System.Drawing.Size(227, 79);
             this.energySourcesButton.TabIndex = 3;
             this.energySourcesButton.Text = "Energy\r\nSources\r\n";
             this.energySourcesButton.UseVisualStyleBackColor = false;
@@ -240,10 +233,9 @@
             this.productButton.ForeColor = System.Drawing.Color.Black;
             this.productButton.Image = ((System.Drawing.Image)(resources.GetObject("productButton.Image")));
             this.productButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.productButton.Location = new System.Drawing.Point(30, 183);
-            this.productButton.Margin = new System.Windows.Forms.Padding(4);
+            this.productButton.Location = new System.Drawing.Point(22, 149);
             this.productButton.Name = "productButton";
-            this.productButton.Size = new System.Drawing.Size(303, 97);
+            this.productButton.Size = new System.Drawing.Size(227, 79);
             this.productButton.TabIndex = 1;
             this.productButton.Text = "Product";
             this.productButton.UseVisualStyleBackColor = false;
@@ -258,11 +250,9 @@
             this.ConvertorBox.Controls.Add(this.textBox1);
             this.ConvertorBox.Controls.Add(this.comboBox2);
             this.ConvertorBox.Controls.Add(this.comboBox1);
-            this.ConvertorBox.Location = new System.Drawing.Point(420, 550);
-            this.ConvertorBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ConvertorBox.Location = new System.Drawing.Point(315, 447);
             this.ConvertorBox.Name = "ConvertorBox";
-            this.ConvertorBox.Padding = new System.Windows.Forms.Padding(4);
-            this.ConvertorBox.Size = new System.Drawing.Size(412, 218);
+            this.ConvertorBox.Size = new System.Drawing.Size(309, 177);
             this.ConvertorBox.TabIndex = 55;
             this.ConvertorBox.TabStop = false;
             this.ConvertorBox.Text = "Convertor";
@@ -270,18 +260,20 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(233, 54);
+            this.label4.Location = new System.Drawing.Point(175, 44);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 22);
+            this.label4.Size = new System.Drawing.Size(120, 18);
             this.label4.TabIndex = 57;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.button1.Font = new System.Drawing.Font("Lucida Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(166, 167);
+            this.button1.Location = new System.Drawing.Point(124, 136);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 27);
+            this.button1.Size = new System.Drawing.Size(63, 22);
             this.button1.TabIndex = 56;
             this.button1.Text = "Convert";
             this.button1.UseVisualStyleBackColor = false;
@@ -290,19 +282,17 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(187, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(140, 44);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(8, 54);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(6, 44);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 22);
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 2;
             // 
             // comboBox2
@@ -312,10 +302,9 @@
             "Lev (lv.)",
             "Euro (€)",
             "Dollar ($)"});
-            this.comboBox2.Location = new System.Drawing.Point(233, 116);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Location = new System.Drawing.Point(175, 94);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 24);
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
             // 
             // comboBox1
@@ -325,10 +314,9 @@
             "Lev (lv.)",
             "Euro (€)",
             "Dollar ($)"});
-            this.comboBox1.Location = new System.Drawing.Point(8, 116);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(6, 94);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // backBankButton
@@ -338,10 +326,9 @@
             this.backBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBankButton.Image = ((System.Drawing.Image)(resources.GetObject("backBankButton.Image")));
             this.backBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.backBankButton.Location = new System.Drawing.Point(1346, 729);
-            this.backBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.backBankButton.Location = new System.Drawing.Point(1010, 592);
             this.backBankButton.Name = "backBankButton";
-            this.backBankButton.Size = new System.Drawing.Size(179, 39);
+            this.backBankButton.Size = new System.Drawing.Size(134, 32);
             this.backBankButton.TabIndex = 54;
             this.backBankButton.Text = "Home";
             this.backBankButton.UseVisualStyleBackColor = false;
@@ -354,10 +341,9 @@
             this.helpBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpBankButton.Image = ((System.Drawing.Image)(resources.GetObject("helpBankButton.Image")));
             this.helpBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.helpBankButton.Location = new System.Drawing.Point(1159, 729);
-            this.helpBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.helpBankButton.Location = new System.Drawing.Point(869, 592);
             this.helpBankButton.Name = "helpBankButton";
-            this.helpBankButton.Size = new System.Drawing.Size(179, 39);
+            this.helpBankButton.Size = new System.Drawing.Size(134, 32);
             this.helpBankButton.TabIndex = 53;
             this.helpBankButton.Text = "Help";
             this.helpBankButton.UseVisualStyleBackColor = false;
@@ -367,67 +353,60 @@
             // 
             this.bankDataView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(229)))), ((int)(((byte)(182)))));
             this.bankDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bankDataView.Location = new System.Drawing.Point(892, 143);
-            this.bankDataView.Margin = new System.Windows.Forms.Padding(4);
+            this.bankDataView.Location = new System.Drawing.Point(669, 116);
             this.bankDataView.Name = "bankDataView";
             this.bankDataView.RowHeadersWidth = 51;
-            this.bankDataView.Size = new System.Drawing.Size(633, 554);
+            this.bankDataView.Size = new System.Drawing.Size(475, 450);
             this.bankDataView.TabIndex = 52;
             // 
             // txtBankType
             // 
             this.txtBankType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBankType.Location = new System.Drawing.Point(580, 373);
-            this.txtBankType.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBankType.Location = new System.Drawing.Point(435, 303);
             this.txtBankType.Name = "txtBankType";
-            this.txtBankType.Size = new System.Drawing.Size(252, 37);
+            this.txtBankType.Size = new System.Drawing.Size(190, 31);
             this.txtBankType.TabIndex = 51;
             // 
             // txtBankPrice
             // 
             this.txtBankPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBankPrice.Location = new System.Drawing.Point(580, 305);
-            this.txtBankPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBankPrice.Location = new System.Drawing.Point(435, 248);
             this.txtBankPrice.Name = "txtBankPrice";
-            this.txtBankPrice.Size = new System.Drawing.Size(252, 37);
+            this.txtBankPrice.Size = new System.Drawing.Size(190, 31);
             this.txtBankPrice.TabIndex = 50;
             // 
             // txtBankName
             // 
             this.txtBankName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBankName.Location = new System.Drawing.Point(580, 242);
-            this.txtBankName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBankName.Location = new System.Drawing.Point(435, 197);
             this.txtBankName.Name = "txtBankName";
-            this.txtBankName.Size = new System.Drawing.Size(252, 37);
+            this.txtBankName.Size = new System.Drawing.Size(190, 31);
             this.txtBankName.TabIndex = 49;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(428, 305);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(321, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 43);
+            this.label3.Size = new System.Drawing.Size(100, 35);
             this.label3.TabIndex = 48;
             this.label3.Text = "Balance:";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(428, 242);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(321, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 43);
+            this.label2.Size = new System.Drawing.Size(84, 35);
             this.label2.TabIndex = 47;
             this.label2.Text = "Name:";
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(428, 373);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(321, 303);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 43);
+            this.label1.Size = new System.Drawing.Size(84, 35);
             this.label1.TabIndex = 46;
             this.label1.Text = "Type:";
             // 
@@ -438,10 +417,9 @@
             this.addBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBankButton.Image = ((System.Drawing.Image)(resources.GetObject("addBankButton.Image")));
             this.addBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addBankButton.Location = new System.Drawing.Point(599, 47);
-            this.addBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addBankButton.Location = new System.Drawing.Point(449, 38);
             this.addBankButton.Name = "addBankButton";
-            this.addBankButton.Size = new System.Drawing.Size(179, 39);
+            this.addBankButton.Size = new System.Drawing.Size(134, 32);
             this.addBankButton.TabIndex = 56;
             this.addBankButton.Text = "Add";
             this.addBankButton.UseVisualStyleBackColor = false;
@@ -454,10 +432,9 @@
             this.saveBankButton.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBankButton.Image = ((System.Drawing.Image)(resources.GetObject("saveBankButton.Image")));
             this.saveBankButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveBankButton.Location = new System.Drawing.Point(972, 729);
-            this.saveBankButton.Margin = new System.Windows.Forms.Padding(4);
+            this.saveBankButton.Location = new System.Drawing.Point(729, 592);
             this.saveBankButton.Name = "saveBankButton";
-            this.saveBankButton.Size = new System.Drawing.Size(179, 39);
+            this.saveBankButton.Size = new System.Drawing.Size(134, 32);
             this.saveBankButton.TabIndex = 57;
             this.saveBankButton.Text = "Save";
             this.saveBankButton.UseVisualStyleBackColor = false;
@@ -466,10 +443,12 @@
             // ShowInfo
             // 
             this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.ShowInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowInfo.Location = new System.Drawing.Point(489, 453);
+            this.ShowInfo.Location = new System.Drawing.Point(367, 368);
+            this.ShowInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ShowInfo.Name = "ShowInfo";
-            this.ShowInfo.Size = new System.Drawing.Size(252, 46);
+            this.ShowInfo.Size = new System.Drawing.Size(189, 37);
             this.ShowInfo.TabIndex = 60;
             this.ShowInfo.Text = "Show Information";
             this.ShowInfo.UseVisualStyleBackColor = false;
@@ -479,9 +458,10 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(582, 186);
+            this.textBox2.Location = new System.Drawing.Point(436, 151);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 37);
+            this.textBox2.Size = new System.Drawing.Size(76, 31);
             this.textBox2.TabIndex = 59;
             this.textBox2.Visible = false;
             // 
@@ -489,19 +469,20 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(430, 186);
+            this.label5.Location = new System.Drawing.Point(322, 151);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 32);
+            this.label5.Size = new System.Drawing.Size(103, 25);
             this.label5.TabIndex = 58;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
             // 
             // BankInterface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(193)))), ((int)(((byte)(120)))));
-            this.ClientSize = new System.Drawing.Size(1609, 829);
+            this.ClientSize = new System.Drawing.Size(1207, 674);
             this.Controls.Add(this.ShowInfo);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
@@ -522,7 +503,6 @@
             this.Controls.Add(this.infoBankButton);
             this.Controls.Add(this.updateBankButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BankInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bank";

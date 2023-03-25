@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Eco Farm Software</title>
+<link rel="shortcut icon" href="EcoFarmLogo1.ico" />
 <style>
 body {
   margin: 0;
@@ -14,7 +16,12 @@ body {
   background-color: #86B16F;
   padding: 40px;
   text-align: center;
-  
+  }
+
+.stickyfooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 #navbar {
@@ -36,6 +43,7 @@ body {
 #navbar a.active {
 display: block;
   background-color: #71955D;
+  text-decoration: underline;
   color: #000000;
 }
 
@@ -58,8 +66,18 @@ display: block;
   padding: 6px 12px;
 }
 
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #000000;
+}
 .tab button.active {
   background-color: #ccc;
+}
+
+.tab button:hover{
+    background-color: #008000;
+    text-decoration: underline;
 }
 
 pre.cscode {margin:0em; overflow:auto; background-color:#333;}
@@ -71,10 +89,11 @@ pre.cscode {margin:0em; overflow:auto; background-color:#333;}
 .boxed {
   border: none;
   width: 610px;
-  height: 600px;
+  height: 550px;
   overflow-x:hidden;
   overflow-y:out;
 }
+
 
 picturetext {
 /*text-allign:justify;*/
@@ -115,6 +134,25 @@ img {
   display: table;
   clear: both;
 }
+
+.footer {  
+position: none;  
+left: 10px;  
+bottom: 20px;  
+right: 10px;   
+width: 95%;  
+height: 50px;
+background-color: #86B16F;  
+color: black;  
+text-align: center;  
+
+}  
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table-row;
+}
 </style>
 </head>
 
@@ -124,14 +162,13 @@ img {
   <h1>Eco Farm Software</h1>
   <p>In search of a more organic world...</p>
 </div>
-
-<div id="navbar">
-  <a href="javascript:void(0)" onclick = "openTab(event, 'HomePage')"id="defaultOpen">Home</a>
-  <a href="javascript:void(0)" onclick = "openTab(event, 'Business')">Business</a>
-  <a href="javascript:void(0)" onclick = "openTab(event, 'Data')">Data</a>
-  <a href="javascript:void(0)" onclick = "openTab(event, 'EcoFarmSoftware')">Eco Farm Software</a>
-</div>
-
+<div class = "clearfix"> </div>
+    <div id="navbar">
+    <a href="javascript:void(0)" onclick = "openTab(event, 'HomePage')"id="defaultOpen">Home</a>
+    <a href="javascript:void(0)" onclick = "openTab(event, 'Business')">Business</a>
+    <a href="javascript:void(0)" onclick = "openTab(event, 'Data')">Data</a>
+    <a href="javascript:void(0)" onclick = "openTab(event, 'EcoFarmSoftware')">Eco Farm Software</a>
+    </div>
 <div class="content">
 <div id = "HomePage" class = "tabcontent">
     <h2>Eco Farm Software</h2>
@@ -156,6 +193,10 @@ img {
         Лесен е за използване от страна на потребителя и не изисква специални умения в сферата на програмирането.  
         Разработен е да съхранява данни за количеството на продуктите, за селскостопанските машини, за добива на зелена енергия, финансите и потребителските акаунти. 
         Клиентът може по всяко време да провери състоянието на продукцията и на машините и баланса по банковата сметка.</p> 
+        
+        <div class="footer" >  
+            Изработено от: Белослава Вълева, Елена Керезиева, Калоян Йорданов, Цветомир Дафов      
+            </div>   
     </div>
 </div>
 
@@ -544,6 +585,9 @@ img {
       
     </div>
   </div>
+  <div class="footer">  
+    Изработено от: Белослава Вълева, Елена Керезиева, Калоян Йорданов, Цветомир Дафов      
+    </div>    
       </div>
 </div>
 
@@ -683,6 +727,9 @@ img {
           </div>
     </div>
   </div>
+  <div class="footer">  
+    Изработено от: Белослава Вълева, Елена Керезиева, Калоян Йорданов, Цветомир Дафов      
+    </div>   
 </div>
 
 <div id = "EcoFarmSoftware" class = "tabcontent">
@@ -1609,10 +1656,10 @@ img {
 		</code></pre>
           </div>
     </div>
+    <div class="footer">  
+        Изработено от: Белослава Вълева, Елена Керезиева, Калоян Йорданов, Цветомир Дафов      
+        </div>      
   </div>
-  
-</div>
-
 
 <!-- Functions --> 
 <script>
@@ -1645,5 +1692,6 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 
 </script>
+
 </body>
 </html>

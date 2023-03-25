@@ -73,7 +73,8 @@ namespace Business
                 Products product = ecoFarmSoftwareContext.Products.Find(id);
                 if (product != null && quantity > 0 && product.Stock > quantity)
                 {
-                    ecoFarmSoftwareContext.Entry(product.Id).CurrentValues.SetValues(product.Stock - quantity);
+                    int a = product.Stock - quantity;
+                    ecoFarmSoftwareContext.Entry(product.Id).CurrentValues.SetValues(a);
                     ecoFarmSoftwareContext.SaveChanges();
                 }
             }

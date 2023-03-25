@@ -33,6 +33,23 @@ namespace Business
         {
             using (ecoFarmSoftwareContext = new EcoFarmSoftwareContext())
             {
+                //bool a = false;
+
+                //foreach (var item in ecoFarmSoftwareContext.Banks)
+                //{
+                //    if (bank.Name != item.Name)
+                //    {
+                //        ecoFarmSoftwareContext.Banks.Add(bank);
+                //        ecoFarmSoftwareContext.SaveChanges();
+                //        a = true;
+                //        break;
+                //    }
+                //}
+                //if (a == false)
+                //{
+                //    Console.WriteLine("The name is already taken");
+                //}
+                
                 ecoFarmSoftwareContext.Banks.Add(bank);
                 ecoFarmSoftwareContext.SaveChanges();
             }
@@ -65,7 +82,7 @@ namespace Business
             }
         }
 
-        public void AddMoney(int id, int quantity)
+        public void AddMoney(int id, decimal quantity)
         {
             using (ecoFarmSoftwareContext = new EcoFarmSoftwareContext())
             {
@@ -79,7 +96,7 @@ namespace Business
             }
         }
 
-        public void TakeMoney(int id, int quantity)
+        public void TakeMoney(int id, decimal quantity)
         {
             using (ecoFarmSoftwareContext = new EcoFarmSoftwareContext())
             {

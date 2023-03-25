@@ -82,7 +82,7 @@ namespace TheFarm
         private void infoProductButton_Click(object sender, EventArgs e)
         {
             label5.Visible = true;
-            textBox1.Visible = true;
+            textBox2.Visible = true;
             ShowInfo.Visible = true;
         }
         #endregion 
@@ -232,7 +232,7 @@ namespace TheFarm
         //Info
         private void ShowInfo_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(textBox1.Text);
+            int id = int.Parse(textBox2.Text);
             Bank product = bankBusiness.Get(id);
 
             txtBankName.Text = product.Name;

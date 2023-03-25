@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
             this.bankButton = new System.Windows.Forms.Button();
             this.energySourcesButton = new System.Windows.Forms.Button();
             this.productButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,7 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(107)))), ((int)(((byte)(75)))));
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.machineButton);
             this.panel1.Controls.Add(this.bankButton);
@@ -55,17 +55,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label1.Location = new System.Drawing.Point(40, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 98);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Menu";
             // 
             // exitButton
             // 
@@ -182,6 +171,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label7.Location = new System.Drawing.Point(39, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(275, 122);
+            this.label7.TabIndex = 62;
+            this.label7.Text = "MENU";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Button energySourcesButton;
         private System.Windows.Forms.Button productButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
     }
 }
 

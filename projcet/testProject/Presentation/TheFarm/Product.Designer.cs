@@ -66,14 +66,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.bankBusinessBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bankBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ecoFarmSoftwareContextBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ecoFarmSoftwareContextBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ecoFarmSoftwareContextBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -449,7 +449,7 @@
             // 
             // ShowInfo
             // 
-            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowInfo.Location = new System.Drawing.Point(487, 604);
             this.ShowInfo.Name = "ShowInfo";
@@ -462,7 +462,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
             this.button1.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(487, 554);
             this.button1.Name = "button1";
@@ -548,13 +548,13 @@
             // 
             this.bankBindingSource.DataSource = this.ecoFarmSoftwareContextBindingSource1;
             // 
-            // ecoFarmSoftwareContextBindingSource
-            // 
-            this.ecoFarmSoftwareContextBindingSource.DataSource = typeof(Data.EcoFarmSoftwareContext);
-            // 
             // ecoFarmSoftwareContextBindingSource1
             // 
             this.ecoFarmSoftwareContextBindingSource1.DataSource = typeof(Data.EcoFarmSoftwareContext);
+            // 
+            // ecoFarmSoftwareContextBindingSource
+            // 
+            this.ecoFarmSoftwareContextBindingSource.DataSource = typeof(Data.EcoFarmSoftwareContext);
             // 
             // Product
             // 
@@ -601,8 +601,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

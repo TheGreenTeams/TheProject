@@ -34,6 +34,7 @@
             this.infoEnergySourceButton = new System.Windows.Forms.Button();
             this.updateEnergySourceButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
             this.bankButton = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.ShowInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.energyDataView)).BeginInit();
             this.SuspendLayout();
@@ -140,6 +140,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label8.Location = new System.Drawing.Point(39, 35);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(275, 122);
+            this.label8.TabIndex = 55;
+            this.label8.Text = "MENU";
             // 
             // exitButton
             // 
@@ -405,7 +416,7 @@
             // 
             // ShowInfo
             // 
-            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowInfo.Location = new System.Drawing.Point(476, 614);
             this.ShowInfo.Name = "ShowInfo";
@@ -435,17 +446,6 @@
             this.label5.TabIndex = 52;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label8.Location = new System.Drawing.Point(39, 35);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(275, 122);
-            this.label8.TabIndex = 55;
-            this.label8.Text = "MENU";
             // 
             // EnergySource
             // 

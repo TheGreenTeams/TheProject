@@ -34,6 +34,7 @@
             this.updateMachineButton = new System.Windows.Forms.Button();
             this.addMachinetButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
             this.bankButton = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.ShowInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machineDataView)).BeginInit();
             this.SuspendLayout();
@@ -136,6 +136,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 30;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label4.Location = new System.Drawing.Point(38, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(275, 122);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "MENU";
             // 
             // exitButton
             // 
@@ -363,9 +374,9 @@
             // 
             // ShowInfo
             // 
-            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowInfo.Location = new System.Drawing.Point(507, 574);
+            this.ShowInfo.Location = new System.Drawing.Point(507, 567);
             this.ShowInfo.Name = "ShowInfo";
             this.ShowInfo.Size = new System.Drawing.Size(295, 52);
             this.ShowInfo.TabIndex = 44;
@@ -393,17 +404,6 @@
             this.label5.TabIndex = 42;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label4.Location = new System.Drawing.Point(38, 41);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(275, 122);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "MENU";
             // 
             // Machine
             // 

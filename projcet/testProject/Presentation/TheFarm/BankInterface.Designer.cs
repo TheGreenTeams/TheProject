@@ -33,6 +33,7 @@
             this.infoBankButton = new System.Windows.Forms.Button();
             this.updateBankButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.machineButton = new System.Windows.Forms.Button();
             this.bankButton = new System.Windows.Forms.Button();
@@ -59,7 +60,6 @@
             this.ShowInfo = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.ConvertorBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,6 +129,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(356, 829);
             this.panel1.TabIndex = 35;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
+            this.label7.Location = new System.Drawing.Point(43, 33);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(275, 122);
+            this.label7.TabIndex = 61;
+            this.label7.Text = "MENU";
             // 
             // exitButton
             // 
@@ -396,7 +407,7 @@
             this.label3.Location = new System.Drawing.Point(428, 305);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 43);
+            this.label3.Size = new System.Drawing.Size(134, 43);
             this.label3.TabIndex = 48;
             this.label3.Text = "Balance:";
             // 
@@ -454,7 +465,7 @@
             // 
             // ShowInfo
             // 
-            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowInfo.Location = new System.Drawing.Point(489, 453);
             this.ShowInfo.Name = "ShowInfo";
@@ -484,17 +495,6 @@
             this.label5.TabIndex = 58;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Impact", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
-            this.label7.Location = new System.Drawing.Point(43, 33);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(275, 122);
-            this.label7.TabIndex = 61;
-            this.label7.Text = "MENU";
             // 
             // BankInterface
             // 

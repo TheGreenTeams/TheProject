@@ -416,7 +416,7 @@
             // 
             // ShowInfo
             // 
-            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowInfo.Location = new System.Drawing.Point(476, 614);
             this.ShowInfo.Name = "ShowInfo";
@@ -442,7 +442,7 @@
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(423, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 32);
+            this.label5.Size = new System.Drawing.Size(131, 32);
             this.label5.TabIndex = 52;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;

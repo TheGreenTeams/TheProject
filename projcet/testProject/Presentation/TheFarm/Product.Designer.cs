@@ -64,14 +64,14 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.bankBusinessBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bankBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bankBusinessBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ecoFarmSoftwareContextBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ecoFarmSoftwareContextBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -432,7 +432,7 @@
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(425, 226);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 32);
+            this.label5.Size = new System.Drawing.Size(131, 32);
             this.label5.TabIndex = 39;
             this.label5.Text = "Enter Id:";
             this.label5.Visible = false;
@@ -449,7 +449,7 @@
             // 
             // ShowInfo
             // 
-            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.ShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.ShowInfo.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowInfo.Location = new System.Drawing.Point(487, 604);
             this.ShowInfo.Name = "ShowInfo";
@@ -462,7 +462,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(168)))), ((int)(((byte)(103)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(234)))), ((int)(((byte)(210)))));
             this.button1.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(487, 554);
             this.button1.Name = "button1";
@@ -479,7 +479,7 @@
             this.label7.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(408, 173);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(477, 32);
+            this.label7.Size = new System.Drawing.Size(476, 32);
             this.label7.TabIndex = 43;
             this.label7.Text = "Еnter the desired quantity to sell:";
             this.label7.Visible = false;
@@ -490,7 +490,7 @@
             this.label8.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(465, 705);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(338, 32);
+            this.label8.Size = new System.Drawing.Size(337, 32);
             this.label8.TabIndex = 44;
             this.label8.Text = "You received {money}lv.";
             this.label8.Visible = false;
@@ -522,7 +522,7 @@
             this.label9.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(408, 345);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(471, 64);
+            this.label9.Size = new System.Drawing.Size(470, 64);
             this.label9.TabIndex = 47;
             this.label9.Text = "To which bank account you want \r\nto add the received amount?";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -534,19 +534,19 @@
             this.label10.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(390, 445);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(511, 32);
+            this.label10.Size = new System.Drawing.Size(510, 32);
             this.label10.TabIndex = 48;
             this.label10.Text = "Enter the name of the bank account:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label10.Visible = false;
             // 
-            // bankBusinessBindingSource
-            // 
-            this.bankBusinessBindingSource.DataSource = typeof(Business.BankBusiness);
-            // 
             // bankBindingSource
             // 
             this.bankBindingSource.DataSource = this.ecoFarmSoftwareContextBindingSource1;
+            // 
+            // bankBusinessBindingSource
+            // 
+            this.bankBusinessBindingSource.DataSource = typeof(Business.BankBusiness);
             // 
             // ecoFarmSoftwareContextBindingSource1
             // 
@@ -599,8 +599,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankBusinessBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecoFarmSoftwareContextBindingSource)).EndInit();
             this.ResumeLayout(false);

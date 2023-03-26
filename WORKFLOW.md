@@ -19,13 +19,12 @@
 |../Bank.cs| Y | TsDafov |Написан|
 | 03. Presentation | ✅ 100%|
 |../Display.cs| Y | Elit0o | Написан |
-| 04. NUnit tests | 🟥 0%|
-| ... | ... | ... | ... |
+| 04. NUnit tests | ✅ 100%| TsDafov, Elit0o |
 | 05. Graphical Interface | ✅ 100%|
-|../Product.cs + Help | Y | Elit0o, TsDafov | - |
-|../Machines.cs + Help| Y | Elit0o, TsDafov | - |
-|../EnergySources.cs + Help| Y | Elit0o, TsDafov | - |
-|../Bank.cs + Help| Y | Elit0o, TsDafov | - |
+|../Product.cs + Help | Y | Elit0o, TsDafov | Написан |
+|../Machines.cs + Help| Y | Elit0o, TsDafov | Написан |
+|../EnergySources.cs + Help| Y | Elit0o, TsDafov | Написан |
+|../Bank.cs + Help| Y | Elit0o, TsDafov | Написан |
 |...Documentation| ✅ 100% | Elit0o, NeZnam0906|
 ✅🟩🟧🟥
 
